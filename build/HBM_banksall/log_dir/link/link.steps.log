@@ -19,7 +19,7 @@ SHELL=/bin/csh
 KRNL_LOOP=1
 TERM=xterm
 HOST=xsjrdevl110
-MAKEFLAGS=w -- BUILDXCLBIN=1 KRNL_LOOP=1 ADDRNDM=0 DSIZE=600 BANKS=all MEMTYPE=HBM TARGET=hw
+MAKEFLAGS=BUILDXCLBIN=1 KRNL_LOOP=1 ADDRNDM=0 DSIZE=600 BANKS=all MEMTYPE=HBM TARGET=hw
 SSH_CLIENT=172.19.220.154 33184 22
 MYVIVADO=
 X11HOME=/tools/x11r5/sun3
@@ -46,9 +46,9 @@ RDI_PATCHROOT=
 TCL_LIBRARY=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/tps/tcl/tcl8.5
 HOSTTYPE=x86_64-linux
 RDI_PLATFORM=lnx64
-MAKELEVEL=2
+MAKELEVEL=1
 RDI_BUILD=yes
-MFLAGS=-w
+MFLAGS=
 RT_LIBPATH=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/scripts/rt/data
 RDI_LIBDIR=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/lib/lnx64.o/Default:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/lib/lnx64.o
 PATH=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/binutils-2.26/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/XRT/2020.2/202020.2.8.743/packages/x86_64/xrt-2.8.743_centos_7.4/opt/xilinx/xrt/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/aietools/bin:/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/DocNav:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/aietools/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/DocNav:/proj/xbuilds/XRT/2020.2/202020.2.8.721/packages/x86_64/xrt-2.8.721_centos_7.4/opt/xilinx/xrt/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vitis/2020.2/aietools/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/SWIP/2020.2_1109_1932/installs/lin64/DocNav:/proj/xbuilds/XRT/master/202020.2.8.489/packages/x86_64/xrt-2.8.489_centos_7.4/opt/xilinx/xrt/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vitis/2020.2/aietools/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0920_2006/installs/lin64/DocNav:/proj/xbuilds/XRT/master/202020.2.8.488/packages/x86_64/xrt-2.8.488_centos_7.4/opt/xilinx/xrt/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vitis/2020.2/aietools/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0919_1911/installs/lin64/DocNav:/proj/xbuilds/XRT/master/202020.2.8.426/packages/x86_64/xrt-2.8.426_centos_7.4/opt/xilinx/xrt/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis_HLS/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Model_Composer/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/microblaze/lin/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/arm/lin/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vitis/2020.2/cardano/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/Vivado/2020.2/bin:/proj/xbuilds/SWIP/2020.2_0908_0703/installs/lin64/DocNav:/home/ravic/bin:/usr/local/bin:/mis/TREE/bin:/usr/bin:/bin:/usr/ucb
@@ -103,10 +103,10 @@ RDI_INSTALLVER=2020.2
 RDI_DATADIR=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/data
 RDI_INSTALLROOT=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64
 _=/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=37870
-XILINX_CD_SESSION=1443102e-5fb1-401e-9a22-8ee682f79540
-XILINX_RS_PORT=32839
-XILINX_RS_SESSION=2bd316ac-872b-42a7-82a7-f4497167e5d0
+XILINX_CD_CONNECT_ID=44119
+XILINX_CD_SESSION=b2d404bb-9456-41b3-9845-9cfbff7e711b
+XILINX_RS_PORT=39583
+XILINX_RS_SESSION=da2f7e2b-12a6-4901-9dca-2c3f536aeac0
 
 
 V++ command line:
@@ -167,29 +167,29 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 06 Dec 2020 20:06:02
+timestamp: 07 Dec 2020 12:30:40
 ------------------------------------------
 V++ internal step: generating xclbin xml file
-timestamp: 06 Dec 2020 20:06:02
+timestamp: 07 Dec 2020 12:30:40
 output: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw.xml
 ------------------------------------------
 step: running system_link
-timestamp: 06 Dec 2020 20:06:02
+timestamp: 07 Dec 2020 12:30:40
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/system_link --xo /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/vadd_hw.xo --config /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/syslinkConfig.ini --xpfm /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int --temp_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/sys_link
 system_link status: success
 ------------------------------------------
 step: running cf2sw
-timestamp: 06 Dec 2020 20:06:18
+timestamp: 07 Dec 2020 12:30:56
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/cf2sw -sdsl /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/sdsl.dat -rtd /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/cf2sw.rtd -nofilter /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/cf2sw_full.rtd -xclbin /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/xclbin_orig.xml -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/xclbin_orig.1.xml
 cf2sw status: success
 ------------------------------------------
 step: running rtd2_system_diagram
-timestamp: 06 Dec 2020 20:06:20
+timestamp: 07 Dec 2020 12:30:59
 cmd: rtd2SystemDiagram
 rtd2_system_diagram status: success
 ------------------------------------------
 step: running vpl
-timestamp: 06 Dec 2020 20:06:22
+timestamp: 07 Dec 2020 12:31:00
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -g --remote_ip_cache /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/.ipcache --output_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int --log_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/log_dir/link --report_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/report_dir/link --config /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vplConfig.ini -k /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link --no-info --iprepo /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/xo/ip_repo/xilinx_com_hls_vadd_1_0 --messageDb /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/run_link/vpl.pb /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/dr.bd.tcl
 Vivado Log File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/run_link/../vivado/vpl/vivado.log
 file: vplConfig.ini
@@ -270,252 +270,264 @@ vivado.param project.writeIntermediateCheckpoints=1
 
    ------------------------------------------
    VPL internal step: generating ipirun.tcl for vivado
-   timestamp: 06 Dec 2020 20:06:28
+   timestamp: 07 Dec 2020 12:31:06
    -----------------------
    VPL internal step: source -notrace ./ipirun.tcl
    File: vpl.tcl:125
    Line computed from base: 122 offset: 3
-   timestamp: 06 December 2020 20:07:01
+   timestamp: 07 December 2020 12:31:26
    -----------------------
    VPL internal step: source scripts/_vivado_params.tcl
    File: vpl.tcl:140
    Line computed from base: 122 offset: 18
-   timestamp: 06 December 2020 20:07:01
+   timestamp: 07 December 2020 12:31:26
    -----------------------
   current step: vpl.create_project
    -----------------------
    VPL internal step: create_vivado_project
    Proc: ::ocl_util::create_vivado_project
    File: ocl_util.tcl:345
-   timestamp: 06 December 2020 20:07:01
+   timestamp: 07 December 2020 12:31:26
    -----------------------
    VPL internal step: source /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/tcl_hooks/prelink.tcl
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:531
-   timestamp: 06 December 2020 20:07:02
+   timestamp: 07 December 2020 12:31:26
    -----------------------
    VPL internal step: create_project -part xcu50-fsvh2104-2-e -force prj prj
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:634
-   timestamp: 06 December 2020 20:07:02
+   timestamp: 07 December 2020 12:31:26
    -----------------------
    VPL internal step: add_files /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/hw_bb_locked.dcp
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:667
-   timestamp: 06 December 2020 20:07:06
+   timestamp: 07 December 2020 12:31:27
    -----------------------
    VPL internal step: create_partition_def -name my_pd -module ulp
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:673
-   timestamp: 06 December 2020 20:07:06
+   timestamp: 07 December 2020 12:31:27
    -----------------------
    VPL internal step: create_reconfig_module -name my_rm -partition_def [get_partition_defs my_pd ] -top ulp
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:675
-   timestamp: 06 December 2020 20:07:06
+   timestamp: 07 December 2020 12:31:27
    -----------------------
    VPL internal step: create_pr_configuration -name config_1 -partitions [list level0_i/ulp:my_rm]
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:686
-   timestamp: 06 December 2020 20:07:06
+   timestamp: 07 December 2020 12:31:27
    -----------------------
   current step: vpl.create_bd
    -----------------------
    VPL internal step: update_ip_catalog
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1872
-   timestamp: 06 December 2020 20:07:06
+   timestamp: 07 December 2020 12:31:28
    -----------------------
    VPL internal step: config_ip_cache -use_cache_location /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/.ipcache
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1882
-   timestamp: 06 December 2020 20:07:14
+   timestamp: 07 December 2020 12:31:33
    -----------------------
    VPL internal step: import_files -norecurse /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/bd/ulp.bd -of_objects my_rm
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1559
-   timestamp: 06 December 2020 20:07:14
+   timestamp: 07 December 2020 12:31:33
    -----------------------
    VPL internal step: open_bd_design -auto_upgrade [get_files ulp.bd]
    File: vpl.tcl:193
-   timestamp: 06 December 2020 20:08:07
+   timestamp: 07 December 2020 12:32:11
    -----------------------
    VPL internal step: report locked IPs
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2574
-   timestamp: 06 December 2020 20:09:23
+   timestamp: 07 December 2020 12:33:10
    -----------------------
    VPL internal step: source .local/dr.bd.tcl
    File: vpl.tcl:221
-   timestamp: 06 December 2020 20:09:23
+   timestamp: 07 December 2020 12:33:10
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:238
-   timestamp: 06 December 2020 20:09:25
+   timestamp: 07 December 2020 12:33:12
    -----------------------
    VPL internal step: add_files /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/tcl_hooks/impl.xdc -fileset [current_fileset -constrset]
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2186
-   timestamp: 06 December 2020 20:09:26
+   timestamp: 07 December 2020 12:33:12
    -----------------------
   current step: vpl.update_bd
    -----------------------
    VPL internal step: inserting profiling and debug cores
    File: vpl.tcl:289
-   timestamp: 06 December 2020 20:09:26
+   timestamp: 07 December 2020 12:33:12
    -----------------------
    VPL internal step: assign_bd_address
    File: vpl.tcl:301
-   timestamp: 06 December 2020 20:09:34
+   timestamp: 07 December 2020 12:33:19
    -----------------------
    VPL internal step: source /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/tcl_hooks/postlink.tcl
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1658
-   timestamp: 06 December 2020 20:09:34
+   timestamp: 07 December 2020 12:33:20
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:311
-   timestamp: 06 December 2020 20:09:34
+   timestamp: 07 December 2020 12:33:20
    -----------------------
    VPL internal step: writing address_map.xml
    File: vpl.tcl:315
-   timestamp: 06 December 2020 20:09:36
+   timestamp: 07 December 2020 12:33:20
    -----------------------
   current step: vpl.generate_target
    -----------------------
    VPL internal step: generate_target all [get_files ulp.bd]
    File: vpl.tcl:341
-   timestamp: 06 December 2020 20:09:36
+   timestamp: 07 December 2020 12:33:20
    -----------------------
    VPL internal step: config_ip_cache -export [get_ips -all -of_object [get_files ulp.bd]]
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1720
-   timestamp: 06 December 2020 20:11:35
+   timestamp: 07 December 2020 12:34:56
    -----------------------
    VPL internal step: writing user synth clock constraints in output/ulp_ooc_copy.xdc
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1948
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: add_files output/ulp_ooc_copy.xdc -fileset [current_fileset -constrset]
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1952
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: move_files [get_files /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/output/ulp_ooc_copy.xdc] -of_objects [get_reconfig_modules my_rm]
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1966
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: read_xdc output/dont_partition.xdc
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:3687
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
   current step: vpl.config_hw_runs
    -----------------------
    VPL internal step: creating vpl tcl hooks for implementation run
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:3140
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: source scripts/_vivado_report_commands.tcl
    File: vpl.tcl:377
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: create_report_config -report_name impl_report_timing_summary_route_design_summary -report_type report_timing_summary -steps {route_design} -runs {impl_1} -options {-max_paths 10}
    File: scripts/_vivado_report_commands.tcl:83
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: create_report_config -report_name impl_report_timing_summary_post_route_phys_opt_design_summary -report_type report_timing_summary -steps {post_route_phys_opt_design} -runs {impl_1} -options {-max_paths 10}
    File: scripts/_vivado_report_commands.tcl:83
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: source scripts/_vivado_synth_props.tcl
    File: vpl.tcl:389
-   timestamp: 06 December 2020 20:12:15
+   timestamp: 07 December 2020 12:35:33
    -----------------------
    VPL internal step: source scripts/_vivado_impl_props.tcl
    File: vpl.tcl:439
-   timestamp: 06 December 2020 20:12:19
+   timestamp: 07 December 2020 12:35:37
    -----------------------
   current step: vpl.synth
    -----------------------
    VPL internal step: launch_runs my_rm_synth_1 -jobs 8  
    File: vpl.tcl:492
-   timestamp: 06 December 2020 20:12:19
+   timestamp: 07 December 2020 12:35:37
    -----------------------
    VPL internal step: generating resource usage report 'output/resource.json'
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:4405
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
    VPL internal step: log_generated_reports for synthesis 'output/generated_reports.log'
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2387
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
    VPL internal step: launched run my_rm_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
    VPL internal step: launched run ulp_hmss_0_0_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
-   VPL internal step: launched run bd_85ad_interconnect1_12_0_synth_1
+   VPL internal step: launched run ulp_dpa_hub_0_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
+   -----------------------
+   VPL internal step: launched run ulp_dpa_mon3_0_synth_1
+   File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
+   timestamp: 07 December 2020 12:43:40
+   -----------------------
+   VPL internal step: launched run ulp_vadd_1_0_synth_1
+   File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
+   timestamp: 07 December 2020 12:43:40
+   -----------------------
+   VPL internal step: launched run bd_85ad_interconnect3_16_0_synth_1
+   File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
+   timestamp: 07 December 2020 12:43:40
+   -----------------------
+   VPL internal step: launched run bd_85ad_interconnect2_14_0_synth_1
+   File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
+   timestamp: 07 December 2020 12:43:40
    -----------------------
    VPL internal step: launched run bd_85ad_hbm_inst_0_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
-   VPL internal step: launched run bd_85ad_axi_apb_bridge_inst_0_synth_1
+   VPL internal step: launched run bd_85ad_interconnect1_12_0_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
-   VPL internal step: launched run bd_85ad_init_reduce_0_synth_1
+   VPL internal step: launched run bd_85ad_interconnect0_18_0_synth_1
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
-   -----------------------
-   VPL internal step: launched run bd_85ad_interconnect0_14_0_synth_1
-   File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:2410
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
   current step: vpl.impl
    -----------------------
    VPL internal step: launch_runs impl_1 -to_step write_bitstream   
    File: vpl.tcl:562
-   timestamp: 06 December 2020 20:20:46
+   timestamp: 07 December 2020 12:43:40
    -----------------------
    VPL internal step: log_generated_reports for implementation 'output/generated_reports.log'
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:743
-   timestamp: 06 December 2020 21:20:01
+   timestamp: 07 December 2020 13:49:38
    -----------------------
    VPL internal step: copy implementation run (impl_1) output files
    File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/.local/ocl_util.tcl:1170
-   timestamp: 06 December 2020 21:20:02
+   timestamp: 07 December 2020 13:49:39
    VPL internal step status: success
 vpl status: success
 ------------------------------------------
 step: running rtdgen
-timestamp: 06 Dec 2020 21:20:12
+timestamp: 07 Dec 2020 13:49:42
 cmd: rtdgen
 ------------------------------------------
 step: running cf2sw to update xclbin xml and generate rtd file (runtime data)
-timestamp: 06 Dec 2020 21:20:12
+timestamp: 07 Dec 2020 13:49:42
 cmd: cf2sw -a /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/address_map.xml -sdsl /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/sdsl.dat -xclbin /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/xclbin_orig.xml -rtd /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw.rtd -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw.xml
 V++ internal step status: success
 ------------------------------------------
 step: running writeSystemDiagram to update system diagram with slr and base address info.
-timestamp: 06 Dec 2020 21:20:14
+timestamp: 07 Dec 2020 13:49:45
 cmd: writeSystemDiagram
 V++ internal step status: success
 rtdgen status: success
 ------------------------------------------
 step: running xclbinutil
-timestamp: 06 Dec 2020 21:20:14
+timestamp: 07 Dec 2020 13:49:45
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw.rtd --append-section :JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw_xml.rtd --add-section BUILD_METADATA:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw_build.rtd --add-section EMBEDDED_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/vadd_hw.xml --add-section SYSTEM_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banksall/vadd_hw.xclbin
 xclbinutil status: success
 ------------------------------------------
 step: running xclbinutilinfo
-timestamp: 06 Dec 2020 21:20:15
+timestamp: 07 Dec 2020 13:49:45
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/xclbinutil --quiet --force --info /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banksall/vadd_hw.xclbin.info --input /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banksall/vadd_hw.xclbin
 xclbinutilinfo status: success
 ------------------------------------------
 step: running generate_sc_driver
-timestamp: 06 Dec 2020 21:20:15
+timestamp: 07 Dec 2020 13:49:45
 cmd: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/binutils-2.26/bin
 generate_sc_driver status: success
 ------------------------------------------
 hw completed
-timestamp: 06 Dec 2020 21:20:15
+timestamp: 07 Dec 2020 13:49:45
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 06 Dec 2020 21:20:15
+timestamp: 07 Dec 2020 13:49:45
 output: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/report_dir/link/system_estimate_vadd_hw.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 06 Dec 2020 21:20:15
+timestamp: 07 Dec 2020 13:49:45

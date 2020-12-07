@@ -1,6 +1,6 @@
 Profile Summary
-Generated on: 2020-12-06 21:20:25
-Msec since Epoch: 1607318425122
+Generated on: 2020-12-07 13:49:54
+Msec since Epoch: 1607377794960
 Profiled application: host
 Target platform: 
 Tool version: 2020.2
@@ -13,14 +13,14 @@ Flow mode: Software Emulation
 
 OpenCL API Calls
 API Name,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
-clCreateProgramWithBinary,1,563.48,563.48,563.48,563.48,
-clCreateContext,1,1.77081,1.77081,1.77081,1.77081,
-clGetDeviceInfo,2,1.39123,0.005168,0.695614,1.38606,
-clGetPlatformIDs,2,0.037202,0.003995,0.018601,0.033207,
-clGetDeviceIDs,2,0.012606,0.003485,0.006303,0.009121,
-clCreateCommandQueue,1,0.010359,0.010359,0.010359,0.010359,
-clGetPlatformInfo,2,0.007723,0.003446,0.0038615,0.004277,
-clRetainDevice,2,0.007505,0.003534,0.0037525,0.003971,
+clCreateProgramWithBinary,1,462.027,462.027,462.027,462.027,
+clGetPlatformIDs,2,0.060605,0.007807,0.0303025,0.052798,
+clGetDeviceInfo,2,0.043266,0.004136,0.021633,0.03913,
+clGetDeviceIDs,2,0.032189,0.015186,0.0160945,0.017003,
+clCreateContext,1,0.015771,0.015771,0.015771,0.015771,
+clGetPlatformInfo,2,0.014629,0.006642,0.0073145,0.007987,
+clCreateCommandQueue,1,0.008684,0.008684,0.008684,0.008684,
+clRetainDevice,2,0.007341,0.003384,0.0036705,0.003957,
 
 
 Kernel Execution
@@ -57,17 +57,17 @@ Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer 
 
 Guidance Parameters
 Parameter,Element,Value,
-DEVICE_EXEC_TIME,xilinx:pcie-hw-em:7v3:1.0-0,0.000000,
+DEVICE_EXEC_TIME,xilinx_u50_gen3x16_xdma_201920_3-0,0.000000,
 MIGRATE_MEM,host,0,
 PLRAM_DEVICE,all,1,
-HBM_DEVICE,all,0,
+HBM_DEVICE,all,1,
 KDMA_DEVICE,all,0,
 P2P_DEVICE,all,0,
 P2P_HOST_TRANSFERS,host,0,
 OBJECTS_RELEASED,all,1,
 TRACE_MEMORY,all,NA,
 CU_CONTEXT_EN,all,0,
-COMMAND_QUEUE_OOO,12264416,0,
+COMMAND_QUEUE_OOO,37444624,0,
 XRT_INI_SETTING,aie_trace_buffer_size,8M,
 XRT_INI_SETTING,continuous_trace,0,
 XRT_INI_SETTING,continuous_trace_interval_ms,10,
@@ -83,7 +83,7 @@ XRT_INI_SETTING,verbosity,4,
 BUFFER_RD_ACTIVE_TIME_MS,all,0,
 BUFFER_WR_ACTIVE_TIME_MS,all,0,
 BUFFER_TX_ACTIVE_TIME_MS,all,0,
-APPLICATION_RUN_TIME_MS,all,7158.07,
+APPLICATION_RUN_TIME_MS,all,6453.24,
 TOTAL_KERNEL_RUN_TIME_MS,all,0,
 
 

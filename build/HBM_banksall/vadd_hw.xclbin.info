@@ -11,7 +11,7 @@ xclbin Information
    Kernels:                vadd
    Signature:              
    Content:                Bitstream
-   UUID (xclbin):          1f840120-b10b-46b7-b652-c2f7bbe36cf8
+   UUID (xclbin):          12fd1b51-3614-4eb7-8fce-81037eec0287
    UUID (IINTF):           862c7020a250293e32036f19956669e5
    Sections:               DEBUG_IP_LAYOUT, BITSTREAM, MEM_TOPOLOGY, IP_LAYOUT, 
                            CONNECTIVITY, CLOCK_FREQ_TOPOLOGY, BUILD_METADATA, 
@@ -313,10 +313,22 @@ Definition
 
 Ports
 -----
-   Port:          M_AXI_GMEM
+   Port:          M_AXI_GMEM0
    Mode:          master
    Range (bytes): 0xFFFFFFFF
-   Data Width:    32 bits
+   Data Width:    512 bits
+   Port Type:     addressable
+
+   Port:          M_AXI_GMEM1
+   Mode:          master
+   Range (bytes): 0xFFFFFFFF
+   Data Width:    512 bits
+   Port Type:     addressable
+
+   Port:          M_AXI_GMEM2
+   Mode:          master
+   Range (bytes): 0xFFFFFFFF
+   Data Width:    512 bits
    Port Type:     addressable
 
    Port:          S_AXI_CONTROL
@@ -331,7 +343,7 @@ Instance:        vadd_1
 
    Argument:          in1
    Register Offset:   0x10
-   Port:              M_AXI_GMEM
+   Port:              M_AXI_GMEM0
    Memory:            HBM[0] (MEM_HBM)
    Memory:            HBM[1] (MEM_DRAM)
    Memory:            HBM[2] (MEM_DRAM)
@@ -367,7 +379,7 @@ Instance:        vadd_1
 
    Argument:          in2
    Register Offset:   0x1C
-   Port:              M_AXI_GMEM
+   Port:              M_AXI_GMEM1
    Memory:            HBM[0] (MEM_HBM)
    Memory:            HBM[1] (MEM_DRAM)
    Memory:            HBM[2] (MEM_DRAM)
@@ -403,7 +415,7 @@ Instance:        vadd_1
 
    Argument:          out
    Register Offset:   0x28
-   Port:              M_AXI_GMEM
+   Port:              M_AXI_GMEM2
    Memory:            HBM[0] (MEM_HBM)
    Memory:            HBM[1] (MEM_DRAM)
    Memory:            HBM[2] (MEM_DRAM)

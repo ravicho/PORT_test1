@@ -19,94 +19,31 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>289</Best-caseLatency>
-            <Average-caseLatency>139553</Average-caseLatency>
-            <Worst-caseLatency>278689</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.963 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.465 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.929 ms</Worst-caseRealTimeLatency>
-            <Interval-min>290</Interval-min>
-            <Interval-max>278690</Interval-max>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
-            <VITIS_LOOP_95_1>
-                <TripCount>16</TripCount>
-                <Latency>
-                    <range>
-                        <min>288</min>
-                        <max>278688</max>
-                    </range>
-                </Latency>
-                <AbsoluteTimeLatency>
-                    <range>
-                        <min>959</min>
-                        <max>928867</max>
-                    </range>
-                </AbsoluteTimeLatency>
-                <IterationLatency>
-                    <range>
-                        <min>18</min>
-                        <max>17418</max>
-                    </range>
-                </IterationLatency>
-                <VITIS_LOOP_99_2>
-                    <TripCount>4</TripCount>
-                    <Latency>
-                        <range>
-                            <min>16</min>
-                            <max>17416</max>
-                        </range>
-                    </Latency>
-                    <AbsoluteTimeLatency>
-                        <range>
-                            <min>53</min>
-                            <max>58047</max>
-                        </range>
-                    </AbsoluteTimeLatency>
-                    <IterationLatency>
-                        <range>
-                            <min>4</min>
-                            <max>4354</max>
-                        </range>
-                    </IterationLatency>
-                    <read1>
-                        <TripCount>1024</TripCount>
-                        <Latency>1025</Latency>
-                        <AbsoluteTimeLatency>3416</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
-                    </read1>
-                    <read2>
-                        <TripCount>1024</TripCount>
-                        <Latency>1025</Latency>
-                        <AbsoluteTimeLatency>3416</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
-                    </read2>
-                    <vadd>
-                        <TripCount>1024</TripCount>
-                        <Latency>1025</Latency>
-                        <AbsoluteTimeLatency>3416</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
-                    </vadd>
-                    <write>
-                        <TripCount>1024</TripCount>
-                        <Latency>1025</Latency>
-                        <AbsoluteTimeLatency>3416</AbsoluteTimeLatency>
-                        <PipelineII>1</PipelineII>
-                        <PipelineDepth>3</PipelineDepth>
-                    </write>
-                </VITIS_LOOP_99_2>
-            </VITIS_LOOP_95_1>
+            <L_vops_vops1>
+                <TripCount>undef</TripCount>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>413</PipelineDepth>
+            </L_vops_vops1>
         </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>8</BRAM_18K>
-            <FF>2351</FF>
-            <LUT>4074</LUT>
+            <BRAM_18K>118</BRAM_18K>
             <DSP>0</DSP>
+            <FF>9747</FF>
+            <LUT>8354</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -461,8 +398,8 @@
             <Attribute>unknown</Attribute>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWVALID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWVALID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -473,8 +410,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWREADY</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWREADY</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -485,8 +422,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWADDR</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWADDR</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -497,8 +434,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -509,8 +446,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWLEN</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWLEN</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -521,8 +458,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWSIZE</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWSIZE</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -533,8 +470,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWBURST</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWBURST</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -545,8 +482,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWLOCK</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWLOCK</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -557,8 +494,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWCACHE</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWCACHE</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -569,8 +506,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWPROT</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWPROT</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -581,8 +518,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWQOS</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWQOS</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -593,8 +530,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWREGION</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWREGION</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -605,8 +542,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_AWUSER</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_AWUSER</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -617,8 +554,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WVALID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WVALID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -629,8 +566,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WREADY</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WREADY</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -641,92 +578,20 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WDATA</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WDATA</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>32</Bits>
+            <Bits>512</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_WSTRB</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>4</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WLAST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_WUSER</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARVALID</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARREADY</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_ARADDR</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WSTRB</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -737,8 +602,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WLAST</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -749,8 +614,80 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARLEN</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_WID</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_WUSER</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_ARVALID</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_ARREADY</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_ARADDR</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_ARID</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_ARLEN</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -761,8 +698,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARSIZE</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARSIZE</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -773,8 +710,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARBURST</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARBURST</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -785,8 +722,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARLOCK</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARLOCK</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -797,8 +734,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARCACHE</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARCACHE</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -809,8 +746,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARPROT</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARPROT</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -821,8 +758,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARQOS</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARQOS</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -833,8 +770,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARREGION</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARREGION</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -845,8 +782,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_ARUSER</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_ARUSER</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -857,8 +794,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RVALID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RVALID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -869,8 +806,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RREADY</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RREADY</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -881,32 +818,20 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RDATA</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RDATA</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
-            <Bits>32</Bits>
+            <Bits>512</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RLAST</name>
-            <Object>gmem</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>m_axi</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>unknown</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axi_gmem_RID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RLAST</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -917,8 +842,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RUSER</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -929,8 +854,20 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_RRESP</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_RUSER</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem0_RRESP</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -941,8 +878,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BVALID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_BVALID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -953,8 +890,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BREADY</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_BREADY</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -965,8 +902,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BRESP</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_BRESP</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -977,8 +914,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BID</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_BID</name>
+            <Object>gmem0</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -989,8 +926,1088 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axi_gmem_BUSER</name>
-            <Object>gmem</Object>
+            <name>m_axi_gmem0_BUSER</name>
+            <Object>gmem0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWVALID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWREADY</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWADDR</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWLEN</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWSIZE</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWBURST</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWLOCK</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWCACHE</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWPROT</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWQOS</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWREGION</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_AWUSER</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WVALID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WREADY</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WDATA</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>512</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WSTRB</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WLAST</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_WUSER</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARVALID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARREADY</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARADDR</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARLEN</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARSIZE</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARBURST</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARLOCK</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARCACHE</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARPROT</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARQOS</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARREGION</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_ARUSER</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RVALID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RREADY</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RDATA</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>512</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RLAST</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RUSER</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_RRESP</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_BVALID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_BREADY</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_BRESP</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_BID</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem1_BUSER</name>
+            <Object>gmem1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWVALID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWREADY</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWADDR</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWLEN</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWSIZE</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWBURST</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWLOCK</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWCACHE</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWPROT</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWQOS</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWREGION</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_AWUSER</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WVALID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WREADY</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WDATA</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>512</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WSTRB</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WLAST</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_WUSER</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARVALID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARREADY</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARADDR</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARLEN</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARSIZE</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARBURST</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARLOCK</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARCACHE</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARPROT</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARQOS</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARREGION</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_ARUSER</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RVALID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RREADY</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RDATA</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>512</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RLAST</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RUSER</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_RRESP</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_BVALID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_BREADY</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_BRESP</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_BID</name>
+            <Object>gmem2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem2_BUSER</name>
+            <Object>gmem2</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>m_axi</IOProtocol>
@@ -1016,90 +2033,40 @@
                     <EstimatedClockPeriod>2.433</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>289</Best-caseLatency>
-                    <Average-caseLatency>139553</Average-caseLatency>
-                    <Worst-caseLatency>278689</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.963 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.465 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.929 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>290 ~ 278690</PipelineInitiationInterval>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
                     <PipelineType>none</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_95_1>
-                        <Name>VITIS_LOOP_95_1</Name>
-                        <TripCount>16</TripCount>
-                        <Latency>288 ~ 278688</Latency>
-                        <AbsoluteTimeLatency>0.960 us ~ 0.929 ms</AbsoluteTimeLatency>
-                        <IterationLatency>
-                            <range>
-                                <min>18</min>
-                                <max>17418</max>
-                            </range>
-                        </IterationLatency>
-                        <PipelineDepth>18 ~ 17418</PipelineDepth>
-                        <VITIS_LOOP_99_2>
-                            <Name>VITIS_LOOP_99_2</Name>
-                            <TripCount>4</TripCount>
-                            <Latency>16 ~ 17416</Latency>
-                            <AbsoluteTimeLatency>53.328 ns ~ 58.048 us</AbsoluteTimeLatency>
-                            <IterationLatency>
-                                <range>
-                                    <min>4</min>
-                                    <max>4354</max>
-                                </range>
-                            </IterationLatency>
-                            <PipelineDepth>4 ~ 4354</PipelineDepth>
-                            <read1>
-                                <Name>read1</Name>
-                                <TripCount>1024</TripCount>
-                                <Latency>1025</Latency>
-                                <AbsoluteTimeLatency>3.416 us</AbsoluteTimeLatency>
-                                <PipelineII>1</PipelineII>
-                                <PipelineDepth>3</PipelineDepth>
-                            </read1>
-                            <read2>
-                                <Name>read2</Name>
-                                <TripCount>1024</TripCount>
-                                <Latency>1025</Latency>
-                                <AbsoluteTimeLatency>3.416 us</AbsoluteTimeLatency>
-                                <PipelineII>1</PipelineII>
-                                <PipelineDepth>3</PipelineDepth>
-                            </read2>
-                            <vadd>
-                                <Name>vadd</Name>
-                                <TripCount>1024</TripCount>
-                                <Latency>1025</Latency>
-                                <AbsoluteTimeLatency>3.416 us</AbsoluteTimeLatency>
-                                <PipelineII>1</PipelineII>
-                                <PipelineDepth>3</PipelineDepth>
-                            </vadd>
-                            <write>
-                                <Name>write</Name>
-                                <TripCount>1024</TripCount>
-                                <Latency>1025</Latency>
-                                <AbsoluteTimeLatency>3.416 us</AbsoluteTimeLatency>
-                                <PipelineII>1</PipelineII>
-                                <PipelineDepth>3</PipelineDepth>
-                            </write>
-                        </VITIS_LOOP_99_2>
-                    </VITIS_LOOP_95_1>
+                    <L_vops_vops1>
+                        <Name>L_vops_vops1</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>413</PipelineDepth>
+                    </L_vops_vops1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>8</BRAM_18K>
+                    <BRAM_18K>118</BRAM_18K>
                     <AVAIL_BRAM>2688</AVAIL_BRAM>
-                    <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>2351</FF>
-                    <AVAIL_FF>1743360</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>4074</LUT>
-                    <AVAIL_LUT>871680</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
+                    <UTIL_BRAM>4</UTIL_BRAM>
                     <DSP>0</DSP>
                     <AVAIL_DSP>5952</AVAIL_DSP>
                     <UTIL_DSP>0</UTIL_DSP>
+                    <FF>9747</FF>
+                    <AVAIL_FF>1743360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>8354</LUT>
+                    <AVAIL_LUT>871680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>640</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
@@ -1449,8 +2416,8 @@
                     <Attribute>unknown</Attribute>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWVALID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWVALID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1461,8 +2428,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWREADY</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWREADY</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1473,8 +2440,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWADDR</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWADDR</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1485,8 +2452,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1497,8 +2464,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWLEN</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWLEN</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1509,8 +2476,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWSIZE</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWSIZE</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1521,8 +2488,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWBURST</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWBURST</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1533,8 +2500,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWLOCK</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWLOCK</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1545,8 +2512,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWCACHE</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWCACHE</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1557,8 +2524,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWPROT</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWPROT</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1569,8 +2536,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWQOS</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWQOS</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1581,8 +2548,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWREGION</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWREGION</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1593,8 +2560,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_AWUSER</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_AWUSER</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1605,8 +2572,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_WVALID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WVALID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1617,8 +2584,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_WREADY</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WREADY</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1629,92 +2596,20 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_WDATA</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WDATA</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
                     <IOConfig/>
                     <Dir>out</Dir>
-                    <Bits>32</Bits>
+                    <Bits>512</Bits>
                     <Attribute>unknown</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_WSTRB</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>out</Dir>
-                    <Bits>4</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_WLAST</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>out</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_WID</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>out</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_WUSER</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>out</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_ARVALID</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>out</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_ARREADY</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>in</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_ARADDR</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WSTRB</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1725,8 +2620,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WLAST</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1737,8 +2632,80 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARLEN</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_WID</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_WUSER</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_ARVALID</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_ARREADY</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_ARADDR</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_ARID</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_ARLEN</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1749,8 +2716,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARSIZE</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARSIZE</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1761,8 +2728,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARBURST</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARBURST</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1773,8 +2740,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARLOCK</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARLOCK</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1785,8 +2752,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARCACHE</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARCACHE</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1797,8 +2764,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARPROT</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARPROT</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1809,8 +2776,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARQOS</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARQOS</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1821,8 +2788,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARREGION</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARREGION</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1833,8 +2800,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_ARUSER</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_ARUSER</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1845,8 +2812,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RVALID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RVALID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1857,8 +2824,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RREADY</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RREADY</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1869,32 +2836,20 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RDATA</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RDATA</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
                     <IOConfig/>
                     <Dir>in</Dir>
-                    <Bits>32</Bits>
+                    <Bits>512</Bits>
                     <Attribute>unknown</Attribute>
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RLAST</name>
-                    <Object>gmem</Object>
-                    <Type>pointer</Type>
-                    <Scope/>
-                    <IOProtocol>m_axi</IOProtocol>
-                    <IOConfig/>
-                    <Dir>in</Dir>
-                    <Bits>1</Bits>
-                    <Attribute>unknown</Attribute>
-                    <CType>int</CType>
-                </RtlPorts>
-                <RtlPorts>
-                    <name>m_axi_gmem_RID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RLAST</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1905,8 +2860,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RUSER</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1917,8 +2872,20 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_RRESP</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_RUSER</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem0_RRESP</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1929,8 +2896,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_BVALID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_BVALID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1941,8 +2908,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_BREADY</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_BREADY</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1953,8 +2920,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_BRESP</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_BRESP</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1965,8 +2932,8 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_BID</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_BID</name>
+                    <Object>gmem0</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1977,8 +2944,1088 @@
                     <CType>int</CType>
                 </RtlPorts>
                 <RtlPorts>
-                    <name>m_axi_gmem_BUSER</name>
-                    <Object>gmem</Object>
+                    <name>m_axi_gmem0_BUSER</name>
+                    <Object>gmem0</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWVALID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWREADY</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWADDR</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWLEN</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWSIZE</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWBURST</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWLOCK</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWCACHE</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWPROT</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWQOS</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWREGION</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_AWUSER</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WVALID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WREADY</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WDATA</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>512</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WSTRB</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WLAST</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_WUSER</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARVALID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARREADY</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARADDR</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARLEN</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARSIZE</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARBURST</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARLOCK</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARCACHE</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARPROT</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARQOS</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARREGION</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_ARUSER</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RVALID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RREADY</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RDATA</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>512</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RLAST</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RUSER</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_RRESP</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_BVALID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_BREADY</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_BRESP</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_BID</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem1_BUSER</name>
+                    <Object>gmem1</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWVALID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWREADY</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWADDR</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWLEN</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWSIZE</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWBURST</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWLOCK</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWCACHE</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWPROT</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWQOS</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWREGION</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_AWUSER</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WVALID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WREADY</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WDATA</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>512</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WSTRB</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WLAST</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_WUSER</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARVALID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARREADY</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARADDR</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>64</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARLEN</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>8</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARSIZE</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARBURST</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARLOCK</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARCACHE</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARPROT</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>3</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARQOS</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARREGION</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_ARUSER</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RVALID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RREADY</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RDATA</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>512</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RLAST</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RUSER</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_RRESP</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_BVALID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_BREADY</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_BRESP</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_BID</name>
+                    <Object>gmem2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>m_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>m_axi_gmem2_BUSER</name>
+                    <Object>gmem2</Object>
                     <Type>pointer</Type>
                     <Scope/>
                     <IOProtocol>m_axi</IOProtocol>
@@ -1993,28 +4040,28 @@
     </ModuleInformation>
     <FIFOInformation/>
     <Args>
-        <Arg ArgName="in1" index="0" direction="inout" srcType="unsigned int const *" srcSize="32">
+        <Arg ArgName="in1" index="0" direction="in" srcType="v_datatype const *" srcSize="512">
             <hwRefs>
-                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
+                <hwRef type="interface" interface="m_axi_gmem0" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_control" name="in1_1" usage="address" direction="in"/>
                 <hwRef type="register" interface="s_axi_control" name="in1_2" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="in2" index="1" direction="inout" srcType="unsigned int const *" srcSize="32">
+        <Arg ArgName="in2" index="1" direction="in" srcType="v_datatype const *" srcSize="512">
             <hwRefs>
-                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
+                <hwRef type="interface" interface="m_axi_gmem1" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_control" name="in2_1" usage="address" direction="in"/>
                 <hwRef type="register" interface="s_axi_control" name="in2_2" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="out" index="2" direction="inout" srcType="unsigned int*" srcSize="32">
+        <Arg ArgName="out" index="2" direction="out" srcType="v_datatype*" srcSize="512">
             <hwRefs>
-                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="out"/>
+                <hwRef type="interface" interface="m_axi_gmem2" name="" usage="data" direction="out"/>
                 <hwRef type="register" interface="s_axi_control" name="out_r_1" usage="address" direction="in"/>
                 <hwRef type="register" interface="s_axi_control" name="out_r_2" usage="address" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="size" index="3" direction="in" srcType="int" srcSize="32">
+        <Arg ArgName="size" index="3" direction="in" srcType="unsigned int const " srcSize="32">
             <hwRefs>
                 <hwRef type="register" interface="s_axi_control" name="size" usage="data" direction="in"/>
             </hwRefs>
@@ -2033,7 +4080,7 @@
     <Interfaces>
         <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
             <busParams>
-                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem</busParam>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem0:m_axi_gmem1:m_axi_gmem2</busParam>
                 <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
             </busParams>
             <portMaps>
@@ -2081,7 +4128,135 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="64" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" offsetSlaveName="s_axi_control" preferredUsageValue="MEMORY">
+        <Interface InterfaceName="m_axi_gmem0" type="axi4full" busTypeName="aximm" mode="master" dataWidth="512" addrWidth="64" portPrefix="m_axi_gmem0_" paramPrefix="C_M_AXI_GMEM0_" offsetSlaveName="s_axi_control" preferredUsageValue="MEMORY">
+            <busParams>
+                <busParam busParamName="NUM_READ_OUTSTANDING">64</busParam>
+                <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
+                <busParam busParamName="MAX_READ_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
+                <busParam busParamName="PROTOCOL">AXI4</busParam>
+                <busParam busParamName="READ_WRITE_MODE">READ_WRITE</busParam>
+                <busParam busParamName="HAS_BURST">0</busParam>
+                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+            </busParams>
+            <ports>
+                <port>m_axi_gmem0_ARADDR</port>
+                <port>m_axi_gmem0_ARBURST</port>
+                <port>m_axi_gmem0_ARCACHE</port>
+                <port>m_axi_gmem0_ARID</port>
+                <port>m_axi_gmem0_ARLEN</port>
+                <port>m_axi_gmem0_ARLOCK</port>
+                <port>m_axi_gmem0_ARPROT</port>
+                <port>m_axi_gmem0_ARQOS</port>
+                <port>m_axi_gmem0_ARREADY</port>
+                <port>m_axi_gmem0_ARREGION</port>
+                <port>m_axi_gmem0_ARSIZE</port>
+                <port>m_axi_gmem0_ARUSER</port>
+                <port>m_axi_gmem0_ARVALID</port>
+                <port>m_axi_gmem0_AWADDR</port>
+                <port>m_axi_gmem0_AWBURST</port>
+                <port>m_axi_gmem0_AWCACHE</port>
+                <port>m_axi_gmem0_AWID</port>
+                <port>m_axi_gmem0_AWLEN</port>
+                <port>m_axi_gmem0_AWLOCK</port>
+                <port>m_axi_gmem0_AWPROT</port>
+                <port>m_axi_gmem0_AWQOS</port>
+                <port>m_axi_gmem0_AWREADY</port>
+                <port>m_axi_gmem0_AWREGION</port>
+                <port>m_axi_gmem0_AWSIZE</port>
+                <port>m_axi_gmem0_AWUSER</port>
+                <port>m_axi_gmem0_AWVALID</port>
+                <port>m_axi_gmem0_BID</port>
+                <port>m_axi_gmem0_BREADY</port>
+                <port>m_axi_gmem0_BRESP</port>
+                <port>m_axi_gmem0_BUSER</port>
+                <port>m_axi_gmem0_BVALID</port>
+                <port>m_axi_gmem0_RDATA</port>
+                <port>m_axi_gmem0_RID</port>
+                <port>m_axi_gmem0_RLAST</port>
+                <port>m_axi_gmem0_RREADY</port>
+                <port>m_axi_gmem0_RRESP</port>
+                <port>m_axi_gmem0_RUSER</port>
+                <port>m_axi_gmem0_RVALID</port>
+                <port>m_axi_gmem0_WDATA</port>
+                <port>m_axi_gmem0_WID</port>
+                <port>m_axi_gmem0_WLAST</port>
+                <port>m_axi_gmem0_WREADY</port>
+                <port>m_axi_gmem0_WSTRB</port>
+                <port>m_axi_gmem0_WUSER</port>
+                <port>m_axi_gmem0_WVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="300" num_read_outstanding="64" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="in1"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="512" final_bitwidth="512" argName="in1"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="m_axi_gmem1" type="axi4full" busTypeName="aximm" mode="master" dataWidth="512" addrWidth="64" portPrefix="m_axi_gmem1_" paramPrefix="C_M_AXI_GMEM1_" offsetSlaveName="s_axi_control" preferredUsageValue="MEMORY">
+            <busParams>
+                <busParam busParamName="NUM_READ_OUTSTANDING">64</busParam>
+                <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
+                <busParam busParamName="MAX_READ_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
+                <busParam busParamName="PROTOCOL">AXI4</busParam>
+                <busParam busParamName="READ_WRITE_MODE">READ_WRITE</busParam>
+                <busParam busParamName="HAS_BURST">0</busParam>
+                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+            </busParams>
+            <ports>
+                <port>m_axi_gmem1_ARADDR</port>
+                <port>m_axi_gmem1_ARBURST</port>
+                <port>m_axi_gmem1_ARCACHE</port>
+                <port>m_axi_gmem1_ARID</port>
+                <port>m_axi_gmem1_ARLEN</port>
+                <port>m_axi_gmem1_ARLOCK</port>
+                <port>m_axi_gmem1_ARPROT</port>
+                <port>m_axi_gmem1_ARQOS</port>
+                <port>m_axi_gmem1_ARREADY</port>
+                <port>m_axi_gmem1_ARREGION</port>
+                <port>m_axi_gmem1_ARSIZE</port>
+                <port>m_axi_gmem1_ARUSER</port>
+                <port>m_axi_gmem1_ARVALID</port>
+                <port>m_axi_gmem1_AWADDR</port>
+                <port>m_axi_gmem1_AWBURST</port>
+                <port>m_axi_gmem1_AWCACHE</port>
+                <port>m_axi_gmem1_AWID</port>
+                <port>m_axi_gmem1_AWLEN</port>
+                <port>m_axi_gmem1_AWLOCK</port>
+                <port>m_axi_gmem1_AWPROT</port>
+                <port>m_axi_gmem1_AWQOS</port>
+                <port>m_axi_gmem1_AWREADY</port>
+                <port>m_axi_gmem1_AWREGION</port>
+                <port>m_axi_gmem1_AWSIZE</port>
+                <port>m_axi_gmem1_AWUSER</port>
+                <port>m_axi_gmem1_AWVALID</port>
+                <port>m_axi_gmem1_BID</port>
+                <port>m_axi_gmem1_BREADY</port>
+                <port>m_axi_gmem1_BRESP</port>
+                <port>m_axi_gmem1_BUSER</port>
+                <port>m_axi_gmem1_BVALID</port>
+                <port>m_axi_gmem1_RDATA</port>
+                <port>m_axi_gmem1_RID</port>
+                <port>m_axi_gmem1_RLAST</port>
+                <port>m_axi_gmem1_RREADY</port>
+                <port>m_axi_gmem1_RRESP</port>
+                <port>m_axi_gmem1_RUSER</port>
+                <port>m_axi_gmem1_RVALID</port>
+                <port>m_axi_gmem1_WDATA</port>
+                <port>m_axi_gmem1_WID</port>
+                <port>m_axi_gmem1_WLAST</port>
+                <port>m_axi_gmem1_WREADY</port>
+                <port>m_axi_gmem1_WSTRB</port>
+                <port>m_axi_gmem1_WUSER</port>
+                <port>m_axi_gmem1_WVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="300" num_read_outstanding="64" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="in2"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="512" final_bitwidth="512" argName="in2"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="m_axi_gmem2" type="axi4full" busTypeName="aximm" mode="master" dataWidth="512" addrWidth="64" portPrefix="m_axi_gmem2_" paramPrefix="C_M_AXI_GMEM2_" offsetSlaveName="s_axi_control" preferredUsageValue="MEMORY">
             <busParams>
                 <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
                 <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
@@ -2094,58 +4269,58 @@
                 <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
             </busParams>
             <ports>
-                <port>m_axi_gmem_ARADDR</port>
-                <port>m_axi_gmem_ARBURST</port>
-                <port>m_axi_gmem_ARCACHE</port>
-                <port>m_axi_gmem_ARID</port>
-                <port>m_axi_gmem_ARLEN</port>
-                <port>m_axi_gmem_ARLOCK</port>
-                <port>m_axi_gmem_ARPROT</port>
-                <port>m_axi_gmem_ARQOS</port>
-                <port>m_axi_gmem_ARREADY</port>
-                <port>m_axi_gmem_ARREGION</port>
-                <port>m_axi_gmem_ARSIZE</port>
-                <port>m_axi_gmem_ARUSER</port>
-                <port>m_axi_gmem_ARVALID</port>
-                <port>m_axi_gmem_AWADDR</port>
-                <port>m_axi_gmem_AWBURST</port>
-                <port>m_axi_gmem_AWCACHE</port>
-                <port>m_axi_gmem_AWID</port>
-                <port>m_axi_gmem_AWLEN</port>
-                <port>m_axi_gmem_AWLOCK</port>
-                <port>m_axi_gmem_AWPROT</port>
-                <port>m_axi_gmem_AWQOS</port>
-                <port>m_axi_gmem_AWREADY</port>
-                <port>m_axi_gmem_AWREGION</port>
-                <port>m_axi_gmem_AWSIZE</port>
-                <port>m_axi_gmem_AWUSER</port>
-                <port>m_axi_gmem_AWVALID</port>
-                <port>m_axi_gmem_BID</port>
-                <port>m_axi_gmem_BREADY</port>
-                <port>m_axi_gmem_BRESP</port>
-                <port>m_axi_gmem_BUSER</port>
-                <port>m_axi_gmem_BVALID</port>
-                <port>m_axi_gmem_RDATA</port>
-                <port>m_axi_gmem_RID</port>
-                <port>m_axi_gmem_RLAST</port>
-                <port>m_axi_gmem_RREADY</port>
-                <port>m_axi_gmem_RRESP</port>
-                <port>m_axi_gmem_RUSER</port>
-                <port>m_axi_gmem_RVALID</port>
-                <port>m_axi_gmem_WDATA</port>
-                <port>m_axi_gmem_WID</port>
-                <port>m_axi_gmem_WLAST</port>
-                <port>m_axi_gmem_WREADY</port>
-                <port>m_axi_gmem_WSTRB</port>
-                <port>m_axi_gmem_WUSER</port>
-                <port>m_axi_gmem_WVALID</port>
+                <port>m_axi_gmem2_ARADDR</port>
+                <port>m_axi_gmem2_ARBURST</port>
+                <port>m_axi_gmem2_ARCACHE</port>
+                <port>m_axi_gmem2_ARID</port>
+                <port>m_axi_gmem2_ARLEN</port>
+                <port>m_axi_gmem2_ARLOCK</port>
+                <port>m_axi_gmem2_ARPROT</port>
+                <port>m_axi_gmem2_ARQOS</port>
+                <port>m_axi_gmem2_ARREADY</port>
+                <port>m_axi_gmem2_ARREGION</port>
+                <port>m_axi_gmem2_ARSIZE</port>
+                <port>m_axi_gmem2_ARUSER</port>
+                <port>m_axi_gmem2_ARVALID</port>
+                <port>m_axi_gmem2_AWADDR</port>
+                <port>m_axi_gmem2_AWBURST</port>
+                <port>m_axi_gmem2_AWCACHE</port>
+                <port>m_axi_gmem2_AWID</port>
+                <port>m_axi_gmem2_AWLEN</port>
+                <port>m_axi_gmem2_AWLOCK</port>
+                <port>m_axi_gmem2_AWPROT</port>
+                <port>m_axi_gmem2_AWQOS</port>
+                <port>m_axi_gmem2_AWREADY</port>
+                <port>m_axi_gmem2_AWREGION</port>
+                <port>m_axi_gmem2_AWSIZE</port>
+                <port>m_axi_gmem2_AWUSER</port>
+                <port>m_axi_gmem2_AWVALID</port>
+                <port>m_axi_gmem2_BID</port>
+                <port>m_axi_gmem2_BREADY</port>
+                <port>m_axi_gmem2_BRESP</port>
+                <port>m_axi_gmem2_BUSER</port>
+                <port>m_axi_gmem2_BVALID</port>
+                <port>m_axi_gmem2_RDATA</port>
+                <port>m_axi_gmem2_RID</port>
+                <port>m_axi_gmem2_RLAST</port>
+                <port>m_axi_gmem2_RREADY</port>
+                <port>m_axi_gmem2_RRESP</port>
+                <port>m_axi_gmem2_RUSER</port>
+                <port>m_axi_gmem2_RVALID</port>
+                <port>m_axi_gmem2_WDATA</port>
+                <port>m_axi_gmem2_WID</port>
+                <port>m_axi_gmem2_WLAST</port>
+                <port>m_axi_gmem2_WREADY</port>
+                <port>m_axi_gmem2_WSTRB</port>
+                <port>m_axi_gmem2_WUSER</port>
+                <port>m_axi_gmem2_WVALID</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="64" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="in1"/>
-                <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="32" argName="in1"/>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="64" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="512" argName="out"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="512" final_bitwidth="512" argName="out"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="7" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_" offsetMasterName="m_axi_gmem">
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="7" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_" offsetMasterName="m_axi_gmem2">
             <ports>
                 <port>s_axi_control_ARADDR</port>
                 <port>s_axi_control_ARREADY</port>
@@ -2255,13 +4430,15 @@
             <item name="M_AXI">
                 <table>
                     <keys size="12">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Offset Interfaces, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
-                    <column name="m_axi_gmem">32 -&gt; 32, 64, 64, slave, s_axi_control, 0, 512, 16, 16, 16, 16</column>
+                    <column name="m_axi_gmem0">512 -&gt; 512, 64, 300, slave, s_axi_control, 0, 512, 16, 16, 64, 16</column>
+                    <column name="m_axi_gmem1">512 -&gt; 512, 64, 300, slave, s_axi_control, 0, 512, 16, 16, 64, 16</column>
+                    <column name="m_axi_gmem2">512 -&gt; 512, 64, 64, slave, s_axi_control, 0, 512, 16, 16, 16, 16</column>
                 </table>
             </item>
             <item name="S_AXILITE">
                 <table>
                     <keys size="6">Interface, Data Width, Address Width, Offset, Register, Data Interface</keys>
-                    <column name="s_axi_control">32, 7, 16, 0, m_axi_gmem</column>
+                    <column name="s_axi_control">32, 7, 16, 0, m_axi_gmem2</column>
                 </table>
             </item>
             <item name="REGISTER">
@@ -2287,10 +4464,10 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="in1">inout, unsigned int const *</column>
-                    <column name="in2">inout, unsigned int const *</column>
-                    <column name="out">inout, unsigned int*</column>
-                    <column name="size">in, int</column>
+                    <column name="in1">in, v_datatype const *</column>
+                    <column name="in2">in, v_datatype const *</column>
+                    <column name="out">out, v_datatype*</column>
+                    <column name="size">in, unsigned int const </column>
                     <column name="num_times">in, unsigned int const </column>
                     <column name="addRandom">in, bool</column>
                 </table>
@@ -2298,13 +4475,13 @@
             <item name="SW-to-HW Mapping">
                 <table isCollapsed="1">
                     <keys size="5">Argument, HW Name, HW Type, HW Usage, HW Info</keys>
-                    <column name="in1">m_axi_gmem, interface, , </column>
+                    <column name="in1">m_axi_gmem0, interface, , </column>
                     <column name="in1">s_axi_control in1_1, register, offset, offset=0x10 range=32</column>
                     <column name="in1">s_axi_control in1_2, register, offset, offset=0x14 range=32</column>
-                    <column name="in2">m_axi_gmem, interface, , </column>
+                    <column name="in2">m_axi_gmem1, interface, , </column>
                     <column name="in2">s_axi_control in2_1, register, offset, offset=0x1c range=32</column>
                     <column name="in2">s_axi_control in2_2, register, offset, offset=0x20 range=32</column>
-                    <column name="out">m_axi_gmem, interface, , </column>
+                    <column name="out">m_axi_gmem2, interface, , </column>
                     <column name="out">s_axi_control out_r_1, register, offset, offset=0x28 range=32</column>
                     <column name="out">s_axi_control out_r_2, register, offset, offset=0x2c range=32</column>
                     <column name="size">s_axi_control size, register, , offset=0x34 range=32</column>
@@ -2316,20 +4493,12 @@
     </ReportSWInterface>
     <ReportBurst>
         <section name="M_AXI Burst Information" level="0">
-            <item name="Burst Summary">
-                <table>
-                    <keys size="3">HW Interface, Message, Location</keys>
-                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 32 in loop 'read1', /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109:16</column>
-                    <column name="m_axi_gmem">Multiple burst reads of variable length and bit width 32 in loop 'read2', /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114:16</column>
-                    <column name="m_axi_gmem">Multiple burst writes of variable length and bit width 32 in loop 'write', /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129:16</column>
-                </table>
-            </item>
             <item name="Burst Missed">
                 <table>
                     <keys size="5">HW Interface, Variable, Problem, Resolution, Location</keys>
-                    <column name="m_axi_gmem">out, Could not widen since Type i32 size is greater than or equal to alignment 4(bytes), , /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129:16</column>
-                    <column name="m_axi_gmem">in2, Could not widen since Type i32 size is greater than or equal to alignment 4(bytes), , /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114:16</column>
-                    <column name="m_axi_gmem">in1, Could not widen since Type i32 size is greater than or equal to alignment 4(bytes), , /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109:16</column>
+                    <column name="m_axi_gmem0">in1, Could not analyze pattern, 214-229, /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183:14</column>
+                    <column name="m_axi_gmem1">in2, Could not analyze pattern, 214-229, /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184:14</column>
+                    <column name="m_axi_gmem2">out, Could not analyze pattern, 214-229, /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:191:21</column>
                 </table>
             </item>
         </section>

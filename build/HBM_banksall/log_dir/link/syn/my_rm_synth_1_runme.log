@@ -10,14 +10,14 @@
 
 Sourcing tcl script '/home/ravic/.Xilinx/Vivado/Vivado_init.tcl'
 54 Beta devices matching pattern found, 54 enabled.
-enable_beta_device: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2517.945 ; gain = 10.023 ; free physical = 22742 ; free virtual = 169672
+enable_beta_device: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2533.789 ; gain = 10.023 ; free physical = 30892 ; free virtual = 166090
 0 Beta devices matching pattern found, 0 enabled.
 0 Beta devices matching pattern found, 0 enabled.
 0 Beta devices matching pattern found, 0 enabled.
 0 Beta devices matching pattern found, 0 enabled.
 0 Beta devices matching pattern found, 0 enabled.
 source ulp.tcl -notrace
-INFO: Dispatch client connection id - 37870
+INFO: Dispatch client connection id - 44119
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/int/xo/ip_repo/xilinx_com_hls_vadd_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo'.
@@ -29,13 +29,13 @@ WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadat
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo/ipdefs/ii_infra_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo/ipdefs/other_ipdefs/axis_clk_metadata_adapter_v1_0
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo/ipdefs/ii_infra_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo/ipdefs/other_ipdefs/clk_metadata_adapter_v1_0
 WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa/iprepo/ipdefs/other_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
-update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2536.203 ; gain = 0.000 ; free physical = 22647 ; free virtual = 169578
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2552.047 ; gain = 0.000 ; free physical = 30793 ; free virtual = 165992
 WARNING: [BD 41-2576] File '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ulp_sim_netlist.vhdl' referenced by design 'ulp' could not be found.
 WARNING: [BD 41-2576] File '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ulp_sim_netlist.v' referenced by design 'ulp' could not be found.
 WARNING: [BD 41-2576] File '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ulp_stub.vhdl' referenced by design 'ulp' could not be found.
 WARNING: [BD 41-2576] File '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ulp_stub.v' referenced by design 'ulp' could not be found.
 WARNING: [BD 41-2576] File '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ulp.dcp' referenced by design 'ulp' could not be found.
-add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2536.203 ; gain = 0.000 ; free physical = 22546 ; free virtual = 169477
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2552.047 ; gain = 0.000 ; free physical = 30678 ; free virtual = 165877
 Command: synth_design -top ulp -part xcu50-fsvh2104-2-e -mode out_of_context
 Starting synth_design
 WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
@@ -49,197 +49,213 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
 INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16505
+INFO: [Synth 8-7075] Helper process launched with PID 181775
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3567.090 ; gain = 152.715 ; free physical = 20337 ; free virtual = 167268
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3581.902 ; gain = 152.684 ; free physical = 28469 ; free virtual = 163668
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ulp' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4121]
+INFO: [Synth 8-6157] synthesizing module 'ulp' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5303]
 INFO: [Synth 8-6157] synthesizing module 'SLR0_imp_NYMDU0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:12]
-INFO: [Synth 8-6157] synthesizing module 'ulp_axi_gpio_null_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_gpio_null_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_gpio_null_0' (1#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_gpio_null_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_gpio_null_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_gpio_null_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_gpio_null_0' (1#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_gpio_null_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'ulp_axi_gpio_null_0' is unconnected for instance 'axi_gpio_null' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:254]
 WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'ulp_axi_gpio_null_0' is unconnected for instance 'axi_gpio_null' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:254]
 WARNING: [Synth 8-7023] instance 'axi_gpio_null' of module 'ulp_axi_gpio_null_0' has 22 connections declared, but only 20 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:254]
-INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_0' (2#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6770]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_G77R79' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2186]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m00_regslice_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m00_regslice_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m00_regslice_2' (3#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m00_regslice_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m00_regslice_2' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m00_regslice_2' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
-WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'ulp_m00_regslice_2' has 40 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_G77R79' (4#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2186]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1SCZP4G' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2386]
-INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_0' (5#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m01_regslice_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m01_regslice_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m01_regslice_2' (6#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m01_regslice_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1SCZP4G' (7#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2386]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_14WTDU7' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3490]
-INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_11' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_11' (8#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_14WTDU7' (9#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3490]
-INFO: [Synth 8-6157] synthesizing module 'ulp_xbar_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xbar_0' (10#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_0' (11#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6770]
-INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_regslice_control_userpf_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_0' (12#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_regslice_control_userpf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_0' (2#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:8516]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_G77R79' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m00_regslice_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m00_regslice_2' (3#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m00_regslice_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m00_regslice_2' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2975]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m00_regslice_2' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2975]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'ulp_m00_regslice_2' has 40 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2975]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_G77R79' (4#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1SCZP4G' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3016]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_0' (5#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m01_regslice_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m01_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m01_regslice_2' (6#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m01_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1SCZP4G' (7#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3016]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_14WTDU7' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4672]
+INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_11' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_11' (8#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_14WTDU7' (9#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4672]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xbar_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xbar_0' (10#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_0' (11#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:8516]
+INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_regslice_control_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_0' (12#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_regslice_control_userpf_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'SLR0_imp_NYMDU0' (13#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:12]
 INFO: [Synth 8-6157] synthesizing module 'SLR1_imp_1UA2LF1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:423]
-INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_1' (14#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7252]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MXEOQC' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3910]
-INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_12' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_12_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_12' (15#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_12_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MXEOQC' (16#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3910]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_1' (17#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7252]
-INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_regslice_control_userpf_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_1' (18#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_regslice_control_userpf_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_ctrl_userpf_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_ctrl_userpf_1' (14#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_ctrl_userpf_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_interconnect_axilite_user_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:8998]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MXEOQC' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5092]
+INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_12' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_12' (15#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MXEOQC' (16#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5092]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_interconnect_axilite_user_1' (17#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:8998]
+INFO: [Synth 8-6157] synthesizing module 'ulp_regslice_control_userpf_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_regslice_control_userpf_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_regslice_control_userpf_1' (18#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_regslice_control_userpf_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'SLR1_imp_1UA2LF1' (19#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:423]
 INFO: [Synth 8-6157] synthesizing module 'System_DPA_imp_5A4TA1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:773]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_cdc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_cdc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_cdc_0' (20#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_cdc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_ctrl_interconnect_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5996]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_FC8NQY' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1920]
-INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_1' (21#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m00_regslice_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m00_regslice_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m00_regslice_3' (22#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m00_regslice_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m00_regslice_3' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2145]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m00_regslice_3' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2145]
-WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'ulp_m00_regslice_3' has 40 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2145]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_FC8NQY' (23#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1920]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1T62ZSV' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2662]
-INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_2' (24#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m01_regslice_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m01_regslice_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m01_regslice_3' (25#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m01_regslice_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1T62ZSV' (26#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2662]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_O5VFXT' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2938]
-INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_3' (27#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m02_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m02_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m02_regslice_0' (28#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m02_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_O5VFXT' (29#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2938]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_12FKBN8' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3214]
-INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_4' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_4' (30#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_auto_cc_4_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_m03_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m03_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_m03_regslice_0' (31#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_m03_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_12FKBN8' (32#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3214]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_17XOMIO' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3700]
-INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_13' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_13_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_13' (33#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_s00_regslice_13_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_17XOMIO' (34#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3700]
-INFO: [Synth 8-6157] synthesizing module 'ulp_xbar_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_xbar_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xbar_2' (35#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_xbar_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_ctrl_interconnect_0' (36#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5996]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_fifo_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_fifo_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_fifo_0' (37#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_fifo_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1432]
-WARNING: [Synth 8-7071] port 's_axi4_rid' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1432]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1432]
-WARNING: [Synth 8-7023] instance 'dpa_fifo' of module 'ulp_dpa_fifo_0' has 41 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1432]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_hub_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_hub_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_hub_0' (38#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_hub_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'trace_rst' of module 'ulp_dpa_hub_0' is unconnected for instance 'dpa_hub' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1474]
-WARNING: [Synth 8-7023] instance 'dpa_hub' of module 'ulp_dpa_hub_0' has 45 connections declared, but only 44 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1474]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_mon0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon0_0' (39#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_mon0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_mon1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon1_0' (40#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_mon1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_reg_slice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_reg_slice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_reg_slice_0' (41#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_reg_slice_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_reg_slice2_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_reg_slice2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_reg_slice2_0' (42#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_dpa_reg_slice2_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'ulp_dpa_reg_slice2_0' is unconnected for instance 'dpa_reg_slice2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1715]
-WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'ulp_dpa_reg_slice2_0' is unconnected for instance 'dpa_reg_slice2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1715]
-WARNING: [Synth 8-7023] instance 'dpa_reg_slice2' of module 'ulp_dpa_reg_slice2_0' has 34 connections declared, but only 32 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1715]
-INFO: [Synth 8-6155] done synthesizing module 'System_DPA_imp_5A4TA1' (43#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:773]
-INFO: [Synth 8-6157] synthesizing module 'ulp_axi_data_sc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_data_sc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_data_sc_0' (44#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_data_sc_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'M01_AXI_awid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wlast' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_aruser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wlast' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_aruser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-WARNING: [Synth 8-7023] instance 'axi_data_sc' of module 'ulp_axi_data_sc_0' has 177 connections declared, but only 113 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5242]
-INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_data_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_data_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_data_0' (45#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_axi_vip_data_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_debug_bridge_xsdbm_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_debug_bridge_xsdbm_0' (46#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_hmss_0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_hmss_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_hmss_0_0' (47#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_hmss_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_ii_level0_wire_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_ii_level0_wire_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_ii_level0_wire_0' (48#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_ii_level0_wire_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_arprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5535]
-WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_awprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5535]
-WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_wstrb' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5535]
-WARNING: [Synth 8-7023] instance 'ii_level0_wire' of module 'ulp_ii_level0_wire_0' has 278 connections declared, but only 275 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5535]
-INFO: [Synth 8-6157] synthesizing module 'interrupt_concat_imp_1RAQO40' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1750]
-INFO: [Synth 8-6157] synthesizing module 'ulp_workaround_cr1039626_orgate_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_workaround_cr1039626_orgate_0' (49#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_cdc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_cdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_cdc_0' (20#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_cdc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_ctrl_interconnect_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7450]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_FC8NQY' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2550]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_1' (21#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m00_regslice_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m00_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m00_regslice_3' (22#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m00_regslice_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'ulp_m00_regslice_3' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2775]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'ulp_m00_regslice_3' is unconnected for instance 'm00_regslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2775]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'ulp_m00_regslice_3' has 40 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2775]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_FC8NQY' (23#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2550]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1T62ZSV' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3292]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_2' (24#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m01_regslice_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m01_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m01_regslice_3' (25#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m01_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1T62ZSV' (26#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3292]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_O5VFXT' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3568]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_3' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_3' (27#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m02_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m02_regslice_0' (28#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_O5VFXT' (29#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3568]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_12FKBN8' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3844]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_4' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_4' (30#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m03_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m03_regslice_0' (31#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_12FKBN8' (32#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:3844]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1WSL50S' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4120]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_5' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_5' (33#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m04_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m04_regslice_0' (34#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m04_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1WSL50S' (35#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4120]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_BRJGH5' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4396]
+INFO: [Synth 8-6157] synthesizing module 'ulp_auto_cc_6' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_auto_cc_6' (36#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_auto_cc_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_m05_regslice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_m05_regslice_0' (37#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_m05_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_BRJGH5' (38#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4396]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_17XOMIO' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4882]
+INFO: [Synth 8-6157] synthesizing module 'ulp_s00_regslice_13' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_s00_regslice_13' (39#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_s00_regslice_13_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_17XOMIO' (40#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4882]
+INFO: [Synth 8-6157] synthesizing module 'ulp_xbar_2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xbar_2' (41#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_ctrl_interconnect_0' (42#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7450]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_fifo_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_fifo_0' (43#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1832]
+WARNING: [Synth 8-7071] port 's_axi4_rid' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1832]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'ulp_dpa_fifo_0' is unconnected for instance 'dpa_fifo' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1832]
+WARNING: [Synth 8-7023] instance 'dpa_fifo' of module 'ulp_dpa_fifo_0' has 41 connections declared, but only 38 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1832]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_hub_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_hub_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_hub_0' (44#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_hub_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'trace_rst' of module 'ulp_dpa_hub_0' is unconnected for instance 'dpa_hub' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1874]
+WARNING: [Synth 8-7023] instance 'dpa_hub' of module 'ulp_dpa_hub_0' has 69 connections declared, but only 68 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1874]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon0_0' (45#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon1_0' (46#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon2_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon2_0' (47#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_mon3_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_mon3_0' (48#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_mon3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_reg_slice_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_reg_slice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_reg_slice_0' (49#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_reg_slice_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_dpa_reg_slice2_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_reg_slice2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_dpa_reg_slice2_0' (50#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_dpa_reg_slice2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'ulp_dpa_reg_slice2_0' is unconnected for instance 'dpa_reg_slice2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'ulp_dpa_reg_slice2_0' is unconnected for instance 'dpa_reg_slice2' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
+WARNING: [Synth 8-7023] instance 'dpa_reg_slice2' of module 'ulp_dpa_reg_slice2_0' has 34 connections declared, but only 32 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2345]
+INFO: [Synth 8-6155] done synthesizing module 'System_DPA_imp_5A4TA1' (51#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:773]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_data_sc_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_data_sc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_data_sc_0' (52#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_data_sc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M01_AXI_awid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wlast' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_aruser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awaddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_awvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wdata' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wlast' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wuser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_wvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_bready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_araddr' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arlen' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arsize' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arburst' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arlock' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arcache' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arregion' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arqos' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_aruser' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_arvalid' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7071] port 'M02_AXI_rready' of module 'ulp_axi_data_sc_0' is unconnected for instance 'axi_data_sc' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+WARNING: [Synth 8-7023] instance 'axi_data_sc' of module 'ulp_axi_data_sc_0' has 177 connections declared, but only 113 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6564]
+INFO: [Synth 8-6157] synthesizing module 'ulp_axi_vip_data_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_axi_vip_data_0' (53#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_debug_bridge_xsdbm_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_debug_bridge_xsdbm_0' (54#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_hmss_0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_hmss_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_hmss_0_0' (55#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_hmss_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_ii_level0_wire_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_ii_level0_wire_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_ii_level0_wire_0' (56#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_ii_level0_wire_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_arprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6923]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_awprot' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6923]
+WARNING: [Synth 8-7071] port 'ULP_M_AXI_CTRL_MGMT_00_wstrb' of module 'ulp_ii_level0_wire_0' is unconnected for instance 'ii_level0_wire' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6923]
+WARNING: [Synth 8-7023] instance 'ii_level0_wire' of module 'ulp_ii_level0_wire_0' has 278 connections declared, but only 275 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:6923]
+INFO: [Synth 8-6157] synthesizing module 'interrupt_concat_imp_1RAQO40' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2380]
+INFO: [Synth 8-6157] synthesizing module 'ulp_workaround_cr1039626_orgate_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_workaround_cr1039626_orgate_0' (57#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_workaround_cr1039626_orgate_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0/synth/ulp_xlconcat_interrupt_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 32 - type: integer 
@@ -372,8 +388,8 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/wrk/xsjhdn
 	Parameter IN127_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 128 - type: integer 
 	Parameter NUM_PORTS bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (50#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0' (51#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0/synth/ulp_xlconcat_interrupt_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (58#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0' (59#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0/synth/ulp_xlconcat_interrupt_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0_0/synth/ulp_xlconcat_interrupt_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -506,95 +522,95 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterize
 	Parameter IN127_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 32 - type: integer 
 	Parameter NUM_PORTS bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (51#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0_0' (52#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0_0/synth/ulp_xlconcat_interrupt_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (59#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_0_0' (60#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_0_0/synth/ulp_xlconcat_interrupt_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_1_0/synth/ulp_xlconcat_interrupt_1_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_1_0' (53#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_1_0/synth/ulp_xlconcat_interrupt_1_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_1_0' (61#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_1_0/synth/ulp_xlconcat_interrupt_1_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_2_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_2_0/synth/ulp_xlconcat_interrupt_2_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_2_0' (54#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_2_0/synth/ulp_xlconcat_interrupt_2_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_2_0' (62#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_2_0/synth/ulp_xlconcat_interrupt_2_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconcat_interrupt_3_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_3_0/synth/ulp_xlconcat_interrupt_3_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_3_0' (55#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_3_0/synth/ulp_xlconcat_interrupt_3_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconcat_interrupt_3_0' (63#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconcat_interrupt_3_0/synth/ulp_xlconcat_interrupt_3_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconstant_gnd_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd_0/synth/ulp_xlconstant_gnd_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 1'b0 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (56#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd_0' (57#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd_0/synth/ulp_xlconstant_gnd_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (64#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd_0' (65#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd_0/synth/ulp_xlconstant_gnd_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'ulp_xlconstant_gnd128_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd128_0/synth/ulp_xlconstant_gnd128_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter CONST_WIDTH bound to: 128 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (57#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd128_0' (58#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd128_0/synth/ulp_xlconstant_gnd128_0.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'interrupt_concat_imp_1RAQO40' (59#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:1750]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' (60#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5814]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5814]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5814]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5814]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr0' of module 'ulp_proc_sys_reset_ctrl_slr0_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5814]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' (61#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5821]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5821]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5821]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5821]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr1' of module 'ulp_proc_sys_reset_ctrl_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5821]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' (62#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5828]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5828]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5828]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5828]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr0' of module 'ulp_proc_sys_reset_kernel2_slr0_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5828]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' (63#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5835]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5835]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5835]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5835]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr1' of module 'ulp_proc_sys_reset_kernel2_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5835]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' (64#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5842]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5842]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5842]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr0' of module 'ulp_proc_sys_reset_kernel_slr0_0' has 10 connections declared, but only 7 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5842]
-INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' (65#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5850]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5850]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (65#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_xlconstant_gnd128_0' (66#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_xlconstant_gnd128_0/synth/ulp_xlconstant_gnd128_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'interrupt_concat_imp_1RAQO40' (67#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:2380]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr0_0' (68#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7202]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7202]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7202]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr0_0' is unconnected for instance 'proc_sys_reset_ctrl_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7202]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr0' of module 'ulp_proc_sys_reset_ctrl_slr0_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7202]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_ctrl_slr1_0' (69#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_ctrl_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7209]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7209]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7209]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_ctrl_slr1_0' is unconnected for instance 'proc_sys_reset_ctrl_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7209]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_ctrl_slr1' of module 'ulp_proc_sys_reset_ctrl_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7209]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr0_0' (70#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7216]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7216]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7216]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr0_0' is unconnected for instance 'proc_sys_reset_kernel2_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7216]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr0' of module 'ulp_proc_sys_reset_kernel2_slr0_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7216]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel2_slr1_0' (71#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel2_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7223]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7223]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7223]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'ulp_proc_sys_reset_kernel2_slr1_0' is unconnected for instance 'proc_sys_reset_kernel2_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7223]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel2_slr1' of module 'ulp_proc_sys_reset_kernel2_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7223]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr0_0' (72#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7230]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7230]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'ulp_proc_sys_reset_kernel_slr0_0' is unconnected for instance 'proc_sys_reset_kernel_slr0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7230]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr0' of module 'ulp_proc_sys_reset_kernel_slr0_0' has 10 connections declared, but only 7 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7230]
+INFO: [Synth 8-6157] synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_proc_sys_reset_kernel_slr1_0' (73#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_proc_sys_reset_kernel_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7238]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'ulp_proc_sys_reset_kernel_slr1_0' is unconnected for instance 'proc_sys_reset_kernel_slr1' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7238]
 INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr1' of module 'ulp_proc_sys_reset_kernel_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5850]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_kernel_slr1' of module 'ulp_proc_sys_reset_kernel_slr1_0' has 10 connections declared, but only 6 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7238]
 INFO: [Synth 8-6157] synthesizing module 'ulp_satellite_gpio_slice_1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_satellite_gpio_slice_1_0/synth/ulp_satellite_gpio_slice_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 2 - type: integer 
 	Parameter DIN_FROM bound to: 1 - type: integer 
 	Parameter DIN_TO bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (66#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_satellite_gpio_slice_1_0' (67#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_satellite_gpio_slice_1_0/synth/ulp_satellite_gpio_slice_1_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'ulp_ulp_ucs_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_ulp_ucs_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_ulp_ucs_0' (68#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_ulp_ucs_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_user_debug_bridge_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_user_debug_bridge_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_user_debug_bridge_0' (69#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_user_debug_bridge_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ulp_vadd_1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_vadd_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ulp_vadd_1_0' (70#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-16257-xsjrdevl110/realtime/ulp_vadd_1_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'vadd_1' of module 'ulp_vadd_1_0' has 63 connections declared, but only 59 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5934]
-INFO: [Synth 8-6155] done synthesizing module 'ulp' (71#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:4121]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (74#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_satellite_gpio_slice_1_0' (75#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_satellite_gpio_slice_1_0/synth/ulp_satellite_gpio_slice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ulp_ulp_ucs_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_ulp_ucs_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_ulp_ucs_0' (76#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_ulp_ucs_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_user_debug_bridge_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_user_debug_bridge_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_user_debug_bridge_0' (77#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_user_debug_bridge_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ulp_vadd_1_0' [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_vadd_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_vadd_1_0' (78#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-181561-xsjrdevl110/realtime/ulp_vadd_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'vadd_1' of module 'ulp_vadd_1_0' has 133 connections declared, but only 125 given [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:7322]
+INFO: [Synth 8-6155] done synthesizing module 'ulp' (79#1) [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/ulp.v:5303]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3630.977 ; gain = 216.602 ; free physical = 21118 ; free virtual = 168050
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3651.789 ; gain = 222.570 ; free physical = 29244 ; free virtual = 164444
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3647.812 ; gain = 233.438 ; free physical = 21119 ; free virtual = 168052
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3666.625 ; gain = 237.406 ; free physical = 29248 ; free virtual = 164448
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3647.812 ; gain = 233.438 ; free physical = 21119 ; free virtual = 168052
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3666.625 ; gain = 237.406 ; free physical = 29248 ; free virtual = 164448
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3647.812 ; gain = 0.000 ; free physical = 21109 ; free virtual = 168042
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3666.625 ; gain = 0.000 ; free physical = 29235 ; free virtual = 164436
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -673,6 +689,14 @@ Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/tem
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_m03_regslice_0/ulp_m03_regslice_0/ulp_m03_regslice_0_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m03_couplers/m03_regslice'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_4/ulp_auto_cc_4/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc'
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_4/ulp_auto_cc_4/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_m04_regslice_0/ulp_m04_regslice_0/ulp_m03_regslice_0_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m04_couplers/m04_regslice'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_m04_regslice_0/ulp_m04_regslice_0/ulp_m03_regslice_0_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m04_couplers/m04_regslice'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_5/ulp_auto_cc_5/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m04_couplers/auto_cc'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_5/ulp_auto_cc_5/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m04_couplers/auto_cc'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_m05_regslice_0/ulp_m05_regslice_0/ulp_m03_regslice_0_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m05_couplers/m05_regslice'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_m05_regslice_0/ulp_m05_regslice_0/ulp_m03_regslice_0_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m05_couplers/m05_regslice'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_6/ulp_auto_cc_6/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m05_couplers/auto_cc'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_auto_cc_6/ulp_auto_cc_6/ulp_auto_cc_4_in_context.xdc] for cell 'System_DPA/dpa_ctrl_interconnect/m05_couplers/auto_cc'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_fifo_0/ulp_dpa_fifo_0/ulp_dpa_fifo_0_in_context.xdc] for cell 'System_DPA/dpa_fifo'
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_fifo_0/ulp_dpa_fifo_0/ulp_dpa_fifo_0_in_context.xdc] for cell 'System_DPA/dpa_fifo'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_hub_0/ulp_dpa_hub_0/ulp_dpa_hub_0_in_context.xdc] for cell 'System_DPA/dpa_hub'
@@ -681,6 +705,10 @@ Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/tem
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon0_0/ulp_dpa_mon0_0/ulp_dpa_mon0_0_in_context.xdc] for cell 'System_DPA/dpa_mon0'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon1_0/ulp_dpa_mon1_0/ulp_dpa_mon1_0_in_context.xdc] for cell 'System_DPA/dpa_mon1'
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon1_0/ulp_dpa_mon1_0/ulp_dpa_mon1_0_in_context.xdc] for cell 'System_DPA/dpa_mon1'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon2_0/ulp_dpa_mon2_0/ulp_dpa_mon3_0_in_context.xdc] for cell 'System_DPA/dpa_mon2'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon2_0/ulp_dpa_mon2_0/ulp_dpa_mon3_0_in_context.xdc] for cell 'System_DPA/dpa_mon2'
+Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon3_0/ulp_dpa_mon3_0/ulp_dpa_mon3_0_in_context.xdc] for cell 'System_DPA/dpa_mon3'
+Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_mon3_0/ulp_dpa_mon3_0/ulp_dpa_mon3_0_in_context.xdc] for cell 'System_DPA/dpa_mon3'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_reg_slice_0/ulp_dpa_reg_slice_0/ulp_dpa_reg_slice2_0_in_context.xdc] for cell 'System_DPA/dpa_reg_slice'
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_reg_slice_0/ulp_dpa_reg_slice_0/ulp_dpa_reg_slice2_0_in_context.xdc] for cell 'System_DPA/dpa_reg_slice'
 Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/ulp_dpa_reg_slice2_0/ulp_dpa_reg_slice2_0/ulp_dpa_reg_slice2_0_in_context.xdc] for cell 'System_DPA/dpa_reg_slice2'
@@ -699,13 +727,13 @@ WARNING: [Constraints 18-619] A clock with name 'hbm_aclk_in' already exists, ov
 Finished Parsing XDC File [/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/output/ulp_ooc_copy.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3678.535 ; gain = 0.000 ; free physical = 21000 ; free virtual = 167933
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3703.285 ; gain = 0.000 ; free physical = 29120 ; free virtual = 164321
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3681.496 ; gain = 2.961 ; free physical = 20999 ; free virtual = 167932
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3707.246 ; gain = 3.961 ; free physical = 29119 ; free virtual = 164320
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3681.500 ; gain = 267.125 ; free physical = 21092 ; free virtual = 168026
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3707.250 ; gain = 278.031 ; free physical = 29224 ; free virtual = 164425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -713,7 +741,7 @@ Start Loading Part and Timing Information
 Loading part: xcu50-fsvh2104-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3681.500 ; gain = 267.125 ; free physical = 21092 ; free virtual = 168026
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3707.250 ; gain = 278.031 ; free physical = 29224 ; free virtual = 164425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -765,18 +793,24 @@ Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m02_couplers/auto_cc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m03_couplers/m03_regslice. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m04_couplers/m04_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m04_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m05_couplers/m05_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect/m05_couplers/auto_cc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_ctrl_interconnect. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_hub. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_mon0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_mon1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_mon2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_mon3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_reg_slice. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for System_DPA/dpa_reg_slice2. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 3681.500 ; gain = 267.125 ; free physical = 21093 ; free virtual = 168026
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3707.250 ; gain = 278.031 ; free physical = 29225 ; free virtual = 164426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3681.508 ; gain = 267.133 ; free physical = 21096 ; free virtual = 168029
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3707.258 ; gain = 278.039 ; free physical = 29226 ; free virtual = 164428
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -798,7 +832,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 3681.508 ; gain = 267.133 ; free physical = 21078 ; free virtual = 168017
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 3707.258 ; gain = 278.039 ; free physical = 29207 ; free virtual = 164415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -810,19 +844,19 @@ WARNING: [Synth 8-565] redefining clock 'clk_kernel_in'
 WARNING: [Synth 8-565] redefining clock 'clk_kernel2_in'
 WARNING: [Synth 8-565] redefining clock 'hbm_aclk_in'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 4060.727 ; gain = 646.352 ; free physical = 20580 ; free virtual = 167519
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 4078.477 ; gain = 649.258 ; free physical = 28709 ; free virtual = 163917
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 4061.719 ; gain = 647.344 ; free physical = 20579 ; free virtual = 167518
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 4080.469 ; gain = 651.250 ; free physical = 28707 ; free virtual = 163915
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 4082.766 ; gain = 668.391 ; free physical = 20574 ; free virtual = 167514
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 4100.508 ; gain = 671.289 ; free physical = 28702 ; free virtual = 163911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -840,37 +874,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20575 ; free virtual = 167514
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28702 ; free virtual = 163911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20575 ; free virtual = 167514
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28702 ; free virtual = 163911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20574 ; free virtual = 167514
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28701 ; free virtual = 163910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20574 ; free virtual = 167514
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28701 ; free virtual = 163910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20574 ; free virtual = 167514
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28701 ; free virtual = 163910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20574 ; free virtual = 167514
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28701 ; free virtual = 163910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -914,74 +948,84 @@ Report BlackBoxes:
 |32    |ulp_m02_regslice_0                |         1|
 |33    |ulp_auto_cc_4                     |         1|
 |34    |ulp_m03_regslice_0                |         1|
-|35    |ulp_s00_regslice_13               |         1|
-|36    |ulp_dpa_cdc_0                     |         1|
-|37    |ulp_dpa_fifo_0                    |         1|
-|38    |ulp_dpa_hub_0                     |         1|
-|39    |ulp_dpa_mon0_0                    |         1|
-|40    |ulp_dpa_mon1_0                    |         1|
-|41    |ulp_dpa_reg_slice_0               |         1|
-|42    |ulp_dpa_reg_slice2_0              |         1|
-|43    |ulp_workaround_cr1039626_orgate_0 |         1|
+|35    |ulp_auto_cc_5                     |         1|
+|36    |ulp_m04_regslice_0                |         1|
+|37    |ulp_auto_cc_6                     |         1|
+|38    |ulp_m05_regslice_0                |         1|
+|39    |ulp_s00_regslice_13               |         1|
+|40    |ulp_dpa_cdc_0                     |         1|
+|41    |ulp_dpa_fifo_0                    |         1|
+|42    |ulp_dpa_hub_0                     |         1|
+|43    |ulp_dpa_mon0_0                    |         1|
+|44    |ulp_dpa_mon1_0                    |         1|
+|45    |ulp_dpa_mon2_0                    |         1|
+|46    |ulp_dpa_mon3_0                    |         1|
+|47    |ulp_dpa_reg_slice_0               |         1|
+|48    |ulp_dpa_reg_slice2_0              |         1|
+|49    |ulp_workaround_cr1039626_orgate_0 |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
 +------+--------------------------------+------+
 |      |Cell                            |Count |
 +------+--------------------------------+------+
-|1     |ulp_auto_cc                     |     5|
-|6     |ulp_axi_data_sc                 |     1|
-|7     |ulp_axi_gpio_null               |     1|
-|8     |ulp_axi_vip_ctrl_userpf         |     2|
-|10    |ulp_axi_vip_data                |     1|
-|11    |ulp_debug_bridge_xsdbm          |     1|
-|12    |ulp_dpa_cdc                     |     1|
-|13    |ulp_dpa_fifo                    |     1|
-|14    |ulp_dpa_hub                     |     1|
-|15    |ulp_dpa_mon0                    |     1|
-|16    |ulp_dpa_mon1                    |     1|
-|17    |ulp_dpa_reg_slice2              |     1|
-|18    |ulp_dpa_reg_slice               |     1|
-|19    |ulp_hmss_0                      |     1|
-|20    |ulp_ii_level0_wire              |     1|
-|21    |ulp_m00_regslice                |     2|
-|23    |ulp_m01_regslice                |     2|
-|25    |ulp_m02_regslice                |     1|
-|26    |ulp_m03_regslice                |     1|
-|27    |ulp_proc_sys_reset_ctrl_slr0    |     1|
-|28    |ulp_proc_sys_reset_ctrl_slr1    |     1|
-|29    |ulp_proc_sys_reset_kernel2_slr0 |     1|
-|30    |ulp_proc_sys_reset_kernel2_slr1 |     1|
-|31    |ulp_proc_sys_reset_kernel_slr0  |     1|
-|32    |ulp_proc_sys_reset_kernel_slr1  |     1|
-|33    |ulp_regslice_control_userpf     |     2|
-|35    |ulp_s00_regslice                |     3|
-|38    |ulp_ulp_ucs                     |     1|
-|39    |ulp_user_debug_bridge           |     1|
-|40    |ulp_vadd_1                      |     1|
-|41    |ulp_workaround_cr1039626_orgate |     1|
-|42    |ulp_xbar                        |     2|
+|1     |ulp_auto_cc                     |     7|
+|8     |ulp_axi_data_sc                 |     1|
+|9     |ulp_axi_gpio_null               |     1|
+|10    |ulp_axi_vip_ctrl_userpf         |     2|
+|12    |ulp_axi_vip_data                |     1|
+|13    |ulp_debug_bridge_xsdbm          |     1|
+|14    |ulp_dpa_cdc                     |     1|
+|15    |ulp_dpa_fifo                    |     1|
+|16    |ulp_dpa_hub                     |     1|
+|17    |ulp_dpa_mon0                    |     1|
+|18    |ulp_dpa_mon1                    |     1|
+|19    |ulp_dpa_mon2                    |     1|
+|20    |ulp_dpa_mon3                    |     1|
+|21    |ulp_dpa_reg_slice2              |     1|
+|22    |ulp_dpa_reg_slice               |     1|
+|23    |ulp_hmss_0                      |     1|
+|24    |ulp_ii_level0_wire              |     1|
+|25    |ulp_m00_regslice                |     2|
+|27    |ulp_m01_regslice                |     2|
+|29    |ulp_m02_regslice                |     1|
+|30    |ulp_m03_regslice                |     1|
+|31    |ulp_m04_regslice                |     1|
+|32    |ulp_m05_regslice                |     1|
+|33    |ulp_proc_sys_reset_ctrl_slr0    |     1|
+|34    |ulp_proc_sys_reset_ctrl_slr1    |     1|
+|35    |ulp_proc_sys_reset_kernel2_slr0 |     1|
+|36    |ulp_proc_sys_reset_kernel2_slr1 |     1|
+|37    |ulp_proc_sys_reset_kernel_slr0  |     1|
+|38    |ulp_proc_sys_reset_kernel_slr1  |     1|
+|39    |ulp_regslice_control_userpf     |     2|
+|41    |ulp_s00_regslice                |     3|
+|44    |ulp_ulp_ucs                     |     1|
+|45    |ulp_user_debug_bridge           |     1|
+|46    |ulp_vadd_1                      |     1|
+|47    |ulp_workaround_cr1039626_orgate |     1|
+|48    |ulp_xbar                        |     2|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.707 ; gain = 674.332 ; free physical = 20574 ; free virtual = 167514
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.449 ; gain = 679.230 ; free physical = 28701 ; free virtual = 163910
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 4088.707 ; gain = 640.645 ; free physical = 20614 ; free virtual = 167553
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4088.711 ; gain = 674.332 ; free physical = 20614 ; free virtual = 167553
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 4108.449 ; gain = 638.605 ; free physical = 28737 ; free virtual = 163945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 4108.453 ; gain = 679.230 ; free physical = 28737 ; free virtual = 163945
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4088.711 ; gain = 0.000 ; free physical = 20698 ; free virtual = 167638
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4108.453 ; gain = 0.000 ; free physical = 28817 ; free virtual = 164026
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4148.238 ; gain = 0.000 ; free physical = 20607 ; free virtual = 167546
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4177.918 ; gain = 0.000 ; free physical = 28724 ; free virtual = 163933
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-167 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
+183 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:25 . Memory (MB): peak = 4162.176 ; gain = 1625.973 ; free physical = 20742 ; free virtual = 167682
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 4191.855 ; gain = 1639.809 ; free physical = 28860 ; free virtual = 164069
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-INFO: [Coretcl 2-1174] Renamed 62 cell refs.
+INFO: [Coretcl 2-1174] Renamed 70 cell refs.
 INFO: [Common 17-1381] The checkpoint '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banksall/temp_dir/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/ulp.dcp' has been generated.
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  6 20:20:45 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  7 12:43:38 2020...

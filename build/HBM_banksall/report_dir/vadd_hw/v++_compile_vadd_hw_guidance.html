@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xrcserver v.2020.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Dec  6 20:05:42 2020</td></tr>
+<tr><td><b>Date</b></td><td>Mon Dec  7 12:30:22 2020</td></tr>
 <tr><td><b>Host</b></td><td>xsjrdevl110 running 64-bit CentOS Linux release 7.4.1708 (Core)</td></tr>
 <tr><td><b>Command</b></td><td>v++  -c -g -t hw -R 1 -k vadd --platform xilinx_u50_gen3x16_xdma_201920_3 --profile.data all:all:all --profile.stall all:all:all --save-temps --temp_dir ././../build/HBM_banksall/temp_dir --report_dir ././../build/HBM_banksall/report_dir --log_dir ././../build/HBM_banksall/log_dir -I./../reference_files -DNDDR_BANKS=all ./../reference_files/kernel.cpp -o ././../build/HBM_banksall/vadd_hw.xo </td></tr>
 </table></center><br>
@@ -3417,9 +3417,9 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#CONFIG FILE DETAILS">3 CONFIG FILE DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 12
+<pre>Violations found: 3
 </pre>
-<pre>Rule Specs Violated: 4
+<pre>Rule Specs Violated: 2
 </pre>
 <a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
 <table border="1">
@@ -3436,116 +3436,17 @@ window.onload = function () { addSorting(); }
 </tr>
 <tr>
 <td align="left">1</td>
-<td align="left">Interface</td>
+<td align="left">Throughput</td>
 <td align="left">advisory</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.vadd.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 32 in loop 'read1'(<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=109">kernel.cpp</a>) has been inferred on port 'gmem' (<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=109">kernel.cpp</a>)
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.vadd.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 413, loop 'L_vops_vops1'
 </td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left">2</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.vadd.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 32 in loop 'read2'(<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=114">kernel.cpp</a>) has been inferred on port 'gmem' (<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=114">kernel.cpp</a>)
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.vadd.Interface</td>
-<td align="left">Multiple burst writes of variable length and bit width 32 in loop 'write'(<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=129">kernel.cpp</a>) has been inferred on port 'gmem' (<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=129">kernel.cpp</a>)
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Latency</td>
-<td align="left">warning</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.vadd.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_99_2' (<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=91">kernel.cpp</a>) in function 'vadd' more than one sub loop.
-</td>
-<td align="left"><a href="http://www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html">See here for more help on vitis_hls 200-960 guidance.</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Latency</td>
-<td align="left">warning</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.vadd.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_95_1' (<a href="file:///wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp#line=95">kernel.cpp</a>) in function 'vadd' the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count.
-</td>
-<td align="left"><a href="http://www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html">See here for more help on vitis_hls 200-960 guidance.</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Throughput</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.vadd.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'read1'
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Throughput</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.vadd.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'read2'
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Throughput</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.vadd.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'vadd'
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Throughput</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.vadd.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'write'
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.vadd.Interface</td>
-<td align="left">Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">11</td>
 <td align="left">Kernel</td>
 <td align="left">advisory</td>
 <td align="left"><undefined></td>
@@ -3556,7 +3457,7 @@ window.onload = function () { addSorting(); }
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">12</td>
+<td align="left">3</td>
 <td align="left">Kernel</td>
 <td align="left">advisory</td>
 <td align="left"><undefined></td>

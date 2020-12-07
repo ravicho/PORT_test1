@@ -1,7 +1,7 @@
 {
  "session": {
   "name": "v++_link_vadd_hw",
-  "uuid": "2bd316ac-872b-42a7-82a7-f4497167e5d0",
+  "uuid": "da2f7e2b-12a6-4901-9dca-2c3f536aeac0",
   "description": "v++  -l -g -t hw -R 1 --platform xilinx_u50_gen3x16_xdma_201920_3 --profile.data all:all:all --profile.stall all:all:all --temp_dir ././../build/HBM_banksall/temp_dir --report_dir ././../build/HBM_banksall/report_dir --log_dir ././../build/HBM_banksall/log_dir --config /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/HBM_banksall.cfg -I./../reference_files -DNDDR_BANKS=all ././../build/HBM_banksall/vadd_hw.xo -o ././../build/HBM_banksall/vadd_hw.xclbin ",
   "timestamp": "0",
   "report_file": {
@@ -157,7 +157,7 @@
     "build_target": "",
     "expects": "",
     "details": {
-     "text": "For clock !%0!, the auto scaled frequency 329.1 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 300.0 MHz.",
+     "text": "For clock !%0!, the auto scaled frequency 336.1 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 300.0 MHz.",
      "args": {
       "arg": [
        {
@@ -181,7 +181,7 @@
         "string_val": ""
        },
        {
-        "string_val": "329.1"
+        "string_val": "336.1"
        },
        {
         "string_val": "300.0"
@@ -249,7 +249,7 @@
     "build_target": "",
     "expects": "",
     "details": {
-     "text": "For clock !%0!, the auto scaled frequency 478.0 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 450.0 MHz.",
+     "text": "For clock !%0!, the auto scaled frequency 465.5 MHz exceeds the original specified frequency. The compiler will select the original specified frequency of 450.0 MHz.",
      "args": {
       "arg": [
        {
@@ -273,7 +273,7 @@
         "string_val": ""
        },
        {
-        "string_val": "478.0"
+        "string_val": "465.5"
        },
        {
         "string_val": "450.0"

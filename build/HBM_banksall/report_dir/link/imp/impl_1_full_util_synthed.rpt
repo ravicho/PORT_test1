@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Sun Dec  6 20:27:26 2020
+| Date         : Mon Dec  7 12:50:42 2020
 | Host         : xsjrdevl110 running 64-bit CentOS Linux release 7.4.1708 (Core)
 | Command      : report_utilization -file full_util_synthed.rpt -pb full_util_synthed.pb
 | Design       : level0_wrapper
@@ -35,18 +35,18 @@ Table of Contents
 +----------------------------+--------+--------+-----------+-------+
 |          Site Type         |  Used  |  Fixed | Available | Util% |
 +----------------------------+--------+--------+-----------+-------+
-| CLB LUTs*                  | 130856 | 100049 |    870016 | 15.04 |
-|   LUT as Logic             | 115515 |  91521 |    870016 | 13.28 |
-|   LUT as Memory            |  15341 |   8528 |    402016 |  3.82 |
-|     LUT as Distributed RAM |   9323 |   5035 |           |       |
-|     LUT as Shift Register  |   6018 |   3493 |           |       |
-| CLB Registers              | 155664 | 106348 |   1740032 |  8.95 |
-|   Register as Flip Flop    | 155662 | 106346 |   1740032 |  8.95 |
+| CLB LUTs*                  | 144880 | 100049 |    870016 | 16.65 |
+|   LUT as Logic             | 125501 |  91521 |    870016 | 14.43 |
+|   LUT as Memory            |  19379 |   8528 |    402016 |  4.82 |
+|     LUT as Distributed RAM |  11331 |   5035 |           |       |
+|     LUT as Shift Register  |   8048 |   3493 |           |       |
+| CLB Registers              | 184114 | 106348 |   1740032 | 10.58 |
+|   Register as Flip Flop    | 184112 | 106346 |   1740032 | 10.58 |
 |   Register as Latch        |      0 |      0 |   1740032 |  0.00 |
 |   Register as AND/OR       |      2 |      2 |   1740032 | <0.01 |
-| CARRY8                     |   1484 |    994 |    108752 |  1.36 |
-| F7 Muxes                   |   1978 |   1082 |    435008 |  0.45 |
-| F8 Muxes                   |    227 |    173 |    217504 |  0.10 |
+| CARRY8                     |   1876 |    994 |    108752 |  1.73 |
+| F7 Muxes                   |   2483 |   1082 |    435008 |  0.57 |
+| F8 Muxes                   |    495 |    173 |    217504 |  0.23 |
 | F9 Muxes                   |      0 |      0 |    108752 |  0.00 |
 +----------------------------+--------+--------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -65,9 +65,9 @@ Table of Contents
 | 0      |            _ |       Reset |            - |
 | 0      |          Yes |           - |            - |
 | 354    |          Yes |           - |          Set |
-| 3681   |          Yes |           - |        Reset |
-| 3386   |          Yes |         Set |            - |
-| 148241 |          Yes |       Reset |            - |
+| 3765   |          Yes |           - |        Reset |
+| 3572   |          Yes |         Set |            - |
+| 176421 |          Yes |       Reset |            - |
 +--------+--------------+-------------+--------------+
 
 
@@ -77,9 +77,9 @@ Table of Contents
 +-------------------+-------+-------+-----------+-------+
 |     Site Type     |  Used | Fixed | Available | Util% |
 +-------------------+-------+-------+-----------+-------+
-| Block RAM Tile    | 208.5 |     0 |      1344 | 15.51 |
-|   RAMB36/FIFO*    |   202 |   171 |      1344 | 15.03 |
-|     RAMB36E2 only |   202 |       |           |       |
+| Block RAM Tile    | 241.5 |     0 |      1344 | 17.97 |
+|   RAMB36/FIFO*    |   235 |   171 |      1344 | 17.49 |
+|     RAMB36E2 only |   235 |       |           |       |
 |   RAMB18          |    13 |    10 |      2688 |  0.48 |
 |     RAMB18E2 only |    13 |       |           |       |
 | URAM              |     0 |     0 |       640 |  0.00 |
@@ -93,8 +93,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    4 |     4 |      5940 |  0.07 |
-|   DSP48E2 only |    4 |       |           |       |
+| DSPs           |    8 |     4 |      5940 |  0.13 |
+|   DSP48E2 only |    8 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -182,25 +182,25 @@ Table of Contents
 +----------------------+--------+---------------------+
 |       Ref Name       |  Used  | Functional Category |
 +----------------------+--------+---------------------+
-| FDRE                 | 148252 |            Register |
-| LUT6                 |  40925 |                 CLB |
-| LUT3                 |  31250 |                 CLB |
-| LUT5                 |  22643 |                 CLB |
-| LUT4                 |  20370 |                 CLB |
-| RAMD32               |  13120 |                 CLB |
-| LUT2                 |  12593 |                 CLB |
-| SRL16E               |   3729 |                 CLB |
-| FDCE                 |   3683 |            Register |
-| FDSE                 |   3386 |            Register |
-| LUT1                 |   3318 |                 CLB |
-| SRLC32E              |   2275 |                 CLB |
-| MUXF7                |   1978 |                 CLB |
-| RAMS32               |   1871 |                 CLB |
-| CARRY8               |   1484 |                 CLB |
+| FDRE                 | 176432 |            Register |
+| LUT6                 |  43404 |                 CLB |
+| LUT3                 |  37078 |                 CLB |
+| LUT5                 |  23516 |                 CLB |
+| LUT4                 |  22037 |                 CLB |
+| RAMD32               |  16634 |                 CLB |
+| LUT2                 |  14912 |                 CLB |
+| SRL16E               |   4317 |                 CLB |
+| FDCE                 |   3767 |            Register |
+| SRLC32E              |   3717 |                 CLB |
+| FDSE                 |   3572 |            Register |
+| LUT1                 |   3546 |                 CLB |
+| MUXF7                |   2483 |                 CLB |
+| RAMS32               |   2373 |                 CLB |
+| CARRY8               |   1876 |                 CLB |
 | RAMD64E              |   1344 |                 CLB |
+| MUXF8                |    495 |                 CLB |
 | FDPE                 |    354 |            Register |
-| MUXF8                |    227 |                 CLB |
-| RAMB36E2             |    202 |            BLOCKRAM |
+| RAMB36E2             |    235 |            BLOCKRAM |
 | RAMS64E              |     36 |                 CLB |
 | HBM_SNGLBLI_INTF_AXI |     32 |            Advanced |
 | BUFG_GT              |     22 |               Clock |
@@ -209,10 +209,10 @@ Table of Contents
 | BUFGCE               |     15 |               Clock |
 | SRLC16E              |     14 |                 CLB |
 | RAMB18E2             |     13 |            BLOCKRAM |
+| DSP48E2              |      8 |          Arithmetic |
 | IBUFCTRL             |      6 |              Others |
 | INBUF                |      5 |                 I/O |
 | GTYE4_COMMON         |      4 |            Advanced |
-| DSP48E2              |      4 |          Arithmetic |
 | OBUF                 |      3 |                 I/O |
 | MMCME4_ADV           |      3 |               Clock |
 | HBM_SNGLBLI_INTF_APB |      2 |            Advanced |
@@ -261,6 +261,8 @@ Table of Contents
 | ulp_proc_sys_reset_kernel2_slr0_0              |    1 |
 | ulp_proc_sys_reset_ctrl_slr1_0                 |    1 |
 | ulp_proc_sys_reset_ctrl_slr0_0                 |    1 |
+| ulp_m05_regslice_0                             |    1 |
+| ulp_m04_regslice_0                             |    1 |
 | ulp_m03_regslice_0                             |    1 |
 | ulp_m02_regslice_0                             |    1 |
 | ulp_m01_regslice_3                             |    1 |
@@ -271,6 +273,8 @@ Table of Contents
 | ulp_hmss_0_0                                   |    1 |
 | ulp_dpa_reg_slice_0                            |    1 |
 | ulp_dpa_reg_slice2_0                           |    1 |
+| ulp_dpa_mon3_0                                 |    1 |
+| ulp_dpa_mon2_0                                 |    1 |
 | ulp_dpa_mon1_0                                 |    1 |
 | ulp_dpa_mon0_0                                 |    1 |
 | ulp_dpa_hub_0                                  |    1 |
@@ -282,6 +286,8 @@ Table of Contents
 | ulp_axi_vip_ctrl_userpf_0                      |    1 |
 | ulp_axi_gpio_null_0                            |    1 |
 | ulp_axi_data_sc_0                              |    1 |
+| ulp_auto_cc_6                                  |    1 |
+| ulp_auto_cc_5                                  |    1 |
 | ulp_auto_cc_4                                  |    1 |
 | ulp_auto_cc_3                                  |    1 |
 | ulp_auto_cc_2                                  |    1 |
@@ -296,13 +302,19 @@ Table of Contents
 | bd_9997_bsip_0                                 |    1 |
 | bd_9997_bs_switch_1_0                          |    1 |
 | bd_9997_axi_jtag_0                             |    1 |
+| bd_85ad_vip_S03_0                              |    1 |
+| bd_85ad_vip_S02_0                              |    1 |
 | bd_85ad_vip_S01_0                              |    1 |
 | bd_85ad_vip_S00_0                              |    1 |
 | bd_85ad_util_vector_logic_0                    |    1 |
+| bd_85ad_slice3_16_0                            |    1 |
+| bd_85ad_slice2_14_0                            |    1 |
 | bd_85ad_slice1_12_0                            |    1 |
-| bd_85ad_slice0_14_0                            |    1 |
+| bd_85ad_slice0_18_0                            |    1 |
+| bd_85ad_interconnect3_16_0                     |    1 |
+| bd_85ad_interconnect2_14_0                     |    1 |
 | bd_85ad_interconnect1_12_0                     |    1 |
-| bd_85ad_interconnect0_14_0                     |    1 |
+| bd_85ad_interconnect0_18_0                     |    1 |
 | bd_85ad_init_reduce_0                          |    1 |
 | bd_85ad_hbm_reset_sync_switch1_apb_low_power_0 |    1 |
 | bd_85ad_hbm_reset_sync_SLR0_0                  |    1 |

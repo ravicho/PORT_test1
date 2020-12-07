@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Sun Dec  6 20:18:28 2020
+| Date         : Mon Dec  7 12:41:36 2020
 | Host         : xsjrdevl110 running 64-bit CentOS Linux release 7.4.1708 (Core)
 | Command      : report_utilization -file ulp_hmss_0_0_utilization_synth.rpt -pb ulp_hmss_0_0_utilization_synth.pb
 | Design       : ulp_hmss_0_0
@@ -200,13 +200,19 @@ Table of Contents
 +-------------------------------------------------------------+------+
 |                           Ref Name                          | Used |
 +-------------------------------------------------------------+------+
+| ulp_hmss_0_0_bd_85ad_vip_S03_0                              |    1 |
+| ulp_hmss_0_0_bd_85ad_vip_S02_0                              |    1 |
 | ulp_hmss_0_0_bd_85ad_vip_S01_0                              |    1 |
 | ulp_hmss_0_0_bd_85ad_vip_S00_0                              |    1 |
 | ulp_hmss_0_0_bd_85ad_util_vector_logic_0                    |    1 |
+| ulp_hmss_0_0_bd_85ad_slice3_16_0                            |    1 |
+| ulp_hmss_0_0_bd_85ad_slice2_14_0                            |    1 |
 | ulp_hmss_0_0_bd_85ad_slice1_12_0                            |    1 |
-| ulp_hmss_0_0_bd_85ad_slice0_14_0                            |    1 |
+| ulp_hmss_0_0_bd_85ad_slice0_18_0                            |    1 |
+| ulp_hmss_0_0_bd_85ad_interconnect3_16_0                     |    1 |
+| ulp_hmss_0_0_bd_85ad_interconnect2_14_0                     |    1 |
 | ulp_hmss_0_0_bd_85ad_interconnect1_12_0                     |    1 |
-| ulp_hmss_0_0_bd_85ad_interconnect0_14_0                     |    1 |
+| ulp_hmss_0_0_bd_85ad_interconnect0_18_0                     |    1 |
 | ulp_hmss_0_0_bd_85ad_init_reduce_0                          |    1 |
 | ulp_hmss_0_0_bd_85ad_hbm_reset_sync_switch1_apb_low_power_0 |    1 |
 | ulp_hmss_0_0_bd_85ad_hbm_reset_sync_SLR0_0                  |    1 |

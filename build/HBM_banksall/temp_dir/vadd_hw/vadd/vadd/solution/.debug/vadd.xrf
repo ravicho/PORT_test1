@@ -1,162 +1,269 @@
 Begin Function 'vadd'
 
+RTL state condition: (1'b1 == 1'b1)
+# ST_40
+local trunc_ln183_s <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_s /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_s_reg_956[57:0] lv
+
+local trunc_ln184_s <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_s /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_s_reg_961[57:0] lv
+
+local trunc_ln4 <partselect_191> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:191>
+trunc_ln4 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:191
+reg: trunc_ln4_reg_966[57:0] lv
+
+# ST_347
+local trunc_ln183_16 <trunc_183> <integer> <> 'trunc' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_16 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_16_reg_983[31:0] lv
+
+local trunc_ln183_1 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_1_reg_988[31:0] lv
+
+local trunc_ln183_2 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_2 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_2_reg_993[31:0] lv
+
+local trunc_ln183_3 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_3 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_3_reg_998[31:0] lv
+
+local trunc_ln183_4 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_4 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_4_reg_1003[31:0] lv
+
+local trunc_ln183_5 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_5 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_5_reg_1008[31:0] lv
+
+local trunc_ln183_6 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_6 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_6_reg_1013[31:0] lv
+
+local trunc_ln183_7 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_7 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_7_reg_1018[31:0] lv
+
+local trunc_ln183_8 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_8 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_8_reg_1023[31:0] lv
+
+local trunc_ln183_9 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_9 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_9_reg_1028[31:0] lv
+
+local trunc_ln183_10 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_10 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_10_reg_1033[31:0] lv
+
+local trunc_ln183_11 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_11 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_11_reg_1038[31:0] lv
+
+local trunc_ln183_12 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_12 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_12_reg_1043[31:0] lv
+
+local trunc_ln183_13 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_13 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_13_reg_1048[31:0] lv
+
+local trunc_ln183_14 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_14 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_14_reg_1053[31:0] lv
+
+local trunc_ln183_15 <partselect_183> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183>
+trunc_ln183_15 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:183
+reg: trunc_ln183_15_reg_1058[31:0] lv
+
+local trunc_ln184 <trunc_184> <integer> <> 'trunc' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_reg_1063[31:0] lv
+
+local trunc_ln184_1 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_1_reg_1068[31:0] lv
+
+local trunc_ln184_2 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_2 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_2_reg_1073[31:0] lv
+
+local trunc_ln184_3 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_3 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_3_reg_1078[31:0] lv
+
+local trunc_ln184_4 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_4 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_4_reg_1083[31:0] lv
+
+local trunc_ln184_5 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_5 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_5_reg_1088[31:0] lv
+
+local trunc_ln184_6 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_6 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_6_reg_1093[31:0] lv
+
+local trunc_ln184_7 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_7 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_7_reg_1098[31:0] lv
+
+local trunc_ln184_8 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_8 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_8_reg_1103[31:0] lv
+
+local trunc_ln184_9 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_9 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_9_reg_1108[31:0] lv
+
+local trunc_ln184_10 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_10 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_10_reg_1113[31:0] lv
+
+local trunc_ln184_11 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_11 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_11_reg_1118[31:0] lv
+
+local trunc_ln184_12 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_12 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_12_reg_1123[31:0] lv
+
+local trunc_ln184_13 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_13 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_13_reg_1128[31:0] lv
+
+local trunc_ln184_14 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_14 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_14_reg_1133[31:0] lv
+
+local trunc_ln184_15 <partselect_184> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184>
+trunc_ln184_15 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:184
+reg: trunc_ln184_15_reg_1138[31:0] lv
+
+# ST_348
+local add_ln188 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_reg_1143[31:0] lv
+
+local add_ln188_1 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_1_reg_1148[31:0] lv
+
+local add_ln188_2 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_2 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_2_reg_1153[31:0] lv
+
+local add_ln188_3 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_3 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_3_reg_1158[31:0] lv
+
+local add_ln188_4 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_4 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_4_reg_1163[31:0] lv
+
+local add_ln188_5 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_5 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_5_reg_1168[31:0] lv
+
+local add_ln188_6 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_6 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_6_reg_1173[31:0] lv
+
+local add_ln188_7 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_7 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_7_reg_1178[31:0] lv
+
+local add_ln188_8 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_8 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_8_reg_1183[31:0] lv
+
+local add_ln188_9 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_9 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_9_reg_1188[31:0] lv
+
+local add_ln188_10 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_10 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_10_reg_1193[31:0] lv
+
+local add_ln188_11 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_11 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_11_reg_1198[31:0] lv
+
+local add_ln188_12 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_12 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_12_reg_1203[31:0] lv
+
+local add_ln188_13 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_13 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_13_reg_1208[31:0] lv
+
+local add_ln188_14 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_14 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_14_reg_1213[31:0] lv
+
+local add_ln188_15 <add_188> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188>
+add_ln188_15 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:188
+reg: add_ln188_15_reg_1218[31:0] lv
+
+
 RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
-# ST_111
-local j <phi_109> <integer> <Phi> 'phi' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-add_ln109_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: j_reg_330[10:0] lv
+# ST_5
+local indvar_flatten <phi_178> <integer> <Phi> 'phi' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:178>
+add_ln178 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:178
+reg: indvar_flatten_reg_264[59:0] lv
 
-local add_ln109_1 <add_109> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-add_ln109_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: add_ln109_1_reg_901[10:0] lv
+local p_Val2_s <> <integer> <Phi> 'phi' <>
+__Result__ /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:669
+reg: p_Val2_s_reg_275[31:0] lv
 
-local icmp_ln109_1 <icmp_109> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-icmp_ln109_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: icmp_ln109_1_reg_906[0:0] lv
+local icmp_ln178 <icmp_178> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:178>
+icmp_ln178 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:178
+reg: icmp_ln178_reg_946[0:0] lv
 
-# ST_112
-local gmem_addr_read <read_112> <integer> <> 'read' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:112>
-gmem_addr_read /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:112
-reg: gmem_addr_read_reg_910[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_pp1_stage0)
-# ST_185
-local j_1 <phi_114> <integer> <Phi> 'phi' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114>
-add_ln114_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114
-reg: j_1_reg_342[10:0] lv
-
-local add_ln114_1 <add_114> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114>
-add_ln114_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114
-reg: add_ln114_1_reg_921[10:0] lv
-
-local icmp_ln114 <icmp_114> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114>
-icmp_ln114 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114
-reg: icmp_ln114_reg_926[0:0] lv
-
-# ST_186
-local gmem_addr_1_read <read_117> <integer> <> 'read' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:117>
-gmem_addr_1_read /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:117
-reg: gmem_addr_1_read_reg_930[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_pp2_stage0)
-# ST_189
-local j_2 <phi_122> <integer> <Phi> 'phi' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122>
-add_ln122 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122
-reg: j_2_reg_354[10:0] lv
-
-local icmp_ln122 <icmp_122> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122>
-icmp_ln122 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122
-reg: icmp_ln122_reg_940[0:0] lv
-
-local zext_ln122 <zext_122> <integer> <> 'zext' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122>
-zext_ln122 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:122
-reg: zext_ln122_reg_944[63:0] lv
-
-# ST_190
-local add_ln126 <add_126> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:126>
-add_ln126 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:126
-reg: add_ln126_reg_959[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_pp3_stage0)
-# ST_194
-local j_3 <phi_129> <integer> <Phi> 'phi' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129>
-add_ln129_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129
-reg: j_3_reg_365[10:0] lv
-
-local icmp_ln129 <icmp_129> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129>
-icmp_ln129 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129
-reg: icmp_ln129_reg_975[0:0] lv
-
-# ST_195
-local vout_buffer_load <load_132> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:132>
-vout_buffer_load /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:132
-reg: vout_buffer_load_reg_984[31:0] lv
+local p_Result_s <> <integer> <> 'bitconcatenate' <>
+__Result__ /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:669
+reg: p_Result_s_reg_950[31:0] lv
 
 
 RTL state condition: (1'b1 == ap_CS_fsm_state1)
 # ST_1
-local xor_ln95 <xor_95> <integer> <Logic> 'xor' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:95>
-xor_ln95 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:95
-reg: xor_ln95_reg_830[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_state114)
-# ST_114
-local gmem_addr_1 <getelementptr_114> <integer> <> 'getelementptr' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114>
-gmem_addr_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:114
-reg: gmem_addr_1_reg_915[63:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_state192)
-# ST_192
-local gmem_addr_2 <getelementptr_129> <integer> <> 'getelementptr' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129>
-gmem_addr_2 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:129
-reg: gmem_addr_2_reg_964[63:0] lv
+local trunc_ln <partselect_168> <integer> <> 'partselect' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168>
+trunc_ln /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168
+reg: trunc_ln_reg_890[27:0] lv
 
 
 RTL state condition: (1'b1 == ap_CS_fsm_state2)
 # ST_2
-local count <> <integer> <Phi> 'phi' <>
-count /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:95
-reg: count_reg_296[31:0] lv
-
-local count_1 <add_95> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:95>
-count /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:95
-reg: count_1_reg_836[31:0] lv
-
-local tmp_3 <bitconcatenate_99> <integer> <> 'bitconcatenate' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:99>
-tmp_3 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:99
-reg: tmp_3_reg_844[31:0] lv
+local vSize <add_168> <integer> <Arithmetic> 'add' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168>
+vSize /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168
+reg: vSize_reg_900[28:0] lv
 
 
-RTL state condition: (1'b1 == ap_CS_fsm_state3)
-# ST_3
-local i <> <integer> <Phi> 'phi' <>
-i /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:99
-reg: i_reg_307[31:0] lv
+RTL state condition: (1'b1 == ap_CS_fsm_state4)
+# ST_4
+local out_read <read_147> <integer> <> 'read' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147>
+out /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147
+reg: out_read_reg_916[63:0] lv
 
-local p_Result_s <> <integer> <> 'bitconcatenate' <>
-__Result__ /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_base.h:669
-reg: p_Result_s_reg_852[31:0] lv
+local in2_read <read_147> <integer> <> 'read' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147>
+in2 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147
+reg: in2_read_reg_921[63:0] lv
 
+local in1_read <read_147> <integer> <> 'read' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147>
+in1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147
+reg: in1_read_reg_926[63:0] lv
 
-RTL state condition: (1'b1 == ap_CS_fsm_state39)
-# ST_39
-local in_index <> <integer> <Phi> 'phi' <>
-reg: in_index_reg_319[31:0] lv
+local zext_ln168_1 <zext_168> <integer> <> 'zext' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168>
+zext_ln168_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168
+reg: zext_ln168_1_reg_931[31:0] lv
 
-local chunk_size <select_106> <integer> <> 'select' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:106>
-chunk_size /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:106
-reg: chunk_size_reg_863[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_state40)
-# ST_40
-local icmp_ln109 <icmp_109> <integer> <Comparator> 'icmp' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-icmp_ln109 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: icmp_ln109_reg_871[0:0] lv
-
-local sext_ln109 <sext_109> <integer> <> 'sext' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-sext_ln109 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: sext_ln109_reg_875[63:0] lv
-
-local gmem_addr <getelementptr_109> <integer> <> 'getelementptr' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-gmem_addr /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: gmem_addr_reg_881[63:0] lv
-
-local sub_ln109 <sub_109> <integer> <Arithmetic> 'sub' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-sub_ln109 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: sub_ln109_reg_887[31:0] lv
-
-
-RTL state condition: (1'b1 == ap_CS_fsm_state41)
-# ST_41
-local sub_ln109_1 <sub_109> <integer> <Arithmetic> 'sub' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109>
-sub_ln109_1 /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:109
-reg: sub_ln109_1_reg_893[31:0] lv
+local bound <mul_147> <integer> <Arithmetic><MultiCycle> 'mul' </wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147>
+bound /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:147
+bound /wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp:168
+reg: bound_reg_936[59:0] lv
 
 
 End Function 'vadd'

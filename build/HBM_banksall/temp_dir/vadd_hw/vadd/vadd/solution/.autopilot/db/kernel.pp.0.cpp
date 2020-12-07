@@ -152,6 +152,10 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp" 2
 # 44 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp"
+typedef struct v_datatype { unsigned int data[16]; } v_dt;
+
+
+
 const unsigned int c_size = 1024;
 const unsigned int c_len = 4096 / 1024;
 const unsigned int c_num = 4 * 4096 / 1024;
@@ -5583,7 +5587,7 @@ inline bool operator!=(
 }
 # 396 "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/common/technology/autopilot/ap_fixed.h" 2
 # 365 "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h" 2
-# 50 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp" 2
+# 54 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp" 2
 
 
 unsigned int minRand(unsigned int seed, int load) {
@@ -5601,68 +5605,57 @@ unsigned int minRand(unsigned int seed, int load) {
 
   return lfsr.to_uint();
 }
-# 76 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp"
+# 145 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp"
 extern "C" {
 __attribute__((sdx_kernel("vadd", 0))) void vadd(
-        const unsigned int *in1,
-        const unsigned int *in2,
-        unsigned int *out,
-        int size,
- const unsigned int num_times,
- bool addRandom
-        )
-{
+    const v_dt *in1,
+    const v_dt *in2,
+    v_dt *out,
+    const unsigned int size,
+    const unsigned int num_times,
+    bool addRandom
+    ) {
 #pragma HLS TOP name=vadd
-# 85 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp"
+# 153 "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/reference_files/kernel.cpp"
 
+#pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem0 latency = 300 num_read_outstanding = 64
+#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1 latency = 300 num_read_outstanding = 64
+#pragma HLS INTERFACE m_axi port = out offset = slave bundle = gmem2
 
-    unsigned int v1_buffer[1024];
-    unsigned int v2_buffer[1024];
-    unsigned int vout_buffer[1024];
-    unsigned int seed = 1;
-    int i, in_index;
+#pragma HLS INTERFACE s_axilite port = in1 bundle = control
+#pragma HLS INTERFACE s_axilite port = in2 bundle = control
+#pragma HLS INTERFACE s_axilite port = out bundle = control
 
+#pragma HLS INTERFACE s_axilite port = size bundle = control
+#pragma HLS INTERFACE s_axilite port = num_times bundle = control
+#pragma HLS INTERFACE s_axilite port = return bundle = control
 
-    minRand(16807, 1);
-  VITIS_LOOP_95_1: for (int count = 0; count < num_times; count++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_num max = c_num
+ int in_index = 1;
+  unsigned int seed = 1;
+  unsigned int vSize = ((size - 1) / 16) + 1;
 
+  v_dt tmpIn1, tmpIn2;
+  v_dt tmpOutAdd;
 
- VITIS_LOOP_99_2: for(i = 0; i < size; i += 1024)
-    {
-#pragma HLS LOOP_TRIPCOUNT min = c_len max = c_len
- seed = minRand(31, 0);
-        in_index = addRandom ? (seed % size) : i;
-        int chunk_size = 1024;
-
-        if ((in_index + 1024) > size) chunk_size = size - in_index;
-
-
-        read1: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
- v1_buffer[j] = in1[in_index + j];
-        }
-        read2: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
- v2_buffer[j] = in2[in_index + j];
-        }
+  minRand(16807, 1);
 
 
 
-        vadd: for (int j = 0 ; j < chunk_size; j ++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
+L_vops:
+  for (int count = 0; count < num_times; count++) {
+  vops1:
+    for (int i = 0; i < vSize; i++) {
+      seed = minRand(31, 0);
+      in_index = (seed % vSize);
+      tmpIn1 = in1[in_index];
+      tmpIn2 = in2[in_index];
 
- vout_buffer[j] = v1_buffer[j] + v2_buffer[j];
-        }
+    vops2:
+      for (int k = 0; k < 16; k++) {
+        tmpOutAdd.data[k] = tmpIn1.data[k] + tmpIn2.data[k];
+      }
 
-        write: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
- out[in_index + j] = vout_buffer[j];
-        }
+      out[in_index] = tmpOutAdd;
     }
   }
 }
