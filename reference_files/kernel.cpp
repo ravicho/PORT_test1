@@ -40,6 +40,10 @@ Description:
 
 #define DATA_SIZE 4096
 
+#define VDATA_SIZE 16
+typedef struct v_datatype { unsigned int data[VDATA_SIZE]; } v_dt;
+
+
 // TRIPCOUNT identifier
 const unsigned int c_size = BUFFER_SIZE;
 const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
@@ -75,18 +79,18 @@ unsigned int minRand(unsigned int seed, int load) {
    */
 extern "C" {
 void vadd(
-        const unsigned int *in1, // Read-Only Vector 1
-        const unsigned int *in2, // Read-Only Vector 2
-        unsigned int *out,       // Output Result
+        const v_dt in1, // Read-Only Vector 1
+        const v_dt in2, // Read-Only Vector 2
+        v_dt int *out,       // Output Result
         int size,                // Size in integer
 	const unsigned int num_times, // Running the same kernel operations num_times
 	bool addRandom           // Address Pattern is random
         )
 {
 
-    unsigned int v1_buffer[BUFFER_SIZE];    // Local memory to store vector1
-    unsigned int v2_buffer[BUFFER_SIZE];    // Local memory to store vector2
-    unsigned int vout_buffer[BUFFER_SIZE];  // Local Memory to store result
+    v_dt v1_buffer[BUFFER_SIZE];    // Local memory to store vector1
+    v_dt v2_buffer[BUFFER_SIZE];    // Local memory to store vector2
+    v_dt vout_buffer[BUFFER_SIZE];  // Local Memory to store result
     unsigned int seed = 1;
     int i, in_index;
 
