@@ -77,11 +77,12 @@ unsigned int minRand(unsigned int seed, int load) {
         out   (output)    --> Output Vector
         size  (input)     --> Size of Vector in Integer
    */
+/*
 extern "C" {
 void vadd(
         const v_dt in1, // Read-Only Vector 1
         const v_dt in2, // Read-Only Vector 2
-        v_dt int *out,       // Output Result
+        v_dt *out,       // Output Result
         int size,                // Size in integer
 	const unsigned int num_times, // Running the same kernel operations num_times
 	bool addRandom           // Address Pattern is random
@@ -139,3 +140,57 @@ void vadd(
   }
 }
 }
+*/
+
+extern "C" {
+void vadd(
+    const v_dt *in1,             // Read-Only Vector 1
+    const v_dt *in2,             // Read-Only Vector 2
+    v_dt *out,               // Output Result for ADD
+    const unsigned int size,     // Size in integer
+    const unsigned int num_times, // Running the same kernel operations num_times
+    bool addRandom           // Address Pattern is random
+    ) {
+#pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem0 latency = 300 num_read_outstanding = 64
+#pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1 latency = 300 num_read_outstanding = 64
+#pragma HLS INTERFACE m_axi port = out offset = slave bundle = gmem2 // latency = 64
+
+#pragma HLS INTERFACE s_axilite port = in1 bundle = control
+#pragma HLS INTERFACE s_axilite port = in2 bundle = control
+#pragma HLS INTERFACE s_axilite port = out bundle = control
+
+#pragma HLS INTERFACE s_axilite port = size bundle = control
+#pragma HLS INTERFACE s_axilite port = num_times bundle = control
+#pragma HLS INTERFACE s_axilite port = return bundle = control
+
+  int in_index = 1;
+  unsigned int seed = 1;
+  unsigned int vSize = ((size - 1) / VDATA_SIZE) + 1;
+
+  v_dt tmpIn1, tmpIn2;
+  v_dt tmpOutAdd;
+
+  minRand(16807, 1);
+
+// Running same kernel operation num_times to keep the kernel busy for HBM
+// bandwidth testing
+L_vops:
+  for (int count = 0; count < num_times; count++) {
+  vops1:
+    for (int i = 0; i < vSize; i++) {
+      seed = minRand(31, 0);
+      in_index = (seed % vSize);
+      tmpIn1 = in1[in_index];
+      tmpIn2 = in2[in_index];
+
+    vops2:
+      for (int k = 0; k < VDATA_SIZE; k++) {
+        tmpOutAdd.data[k] = tmpIn1.data[k] + tmpIn2.data[k];
+      }
+
+      out[in_index] = tmpOutAdd;
+    }
+  }
+}
+}
+
