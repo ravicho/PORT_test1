@@ -2,12 +2,12 @@
 # Vitis Analyzer v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # 
-# Start of session at: Wed Dec  2 08:54:57 2020
-# Process ID: 7755
-# Current directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile
-# Command line: vitis_analyzer ../build/HBM_banks2/vadd_hw_emu.xo.compile_summary
-# Log file: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/vitis_analyzer.log
-# Journal file: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/vitis_analyzer.jou
+# Start of session at: Sun Dec  6 23:16:18 2020
+# Process ID: 20559
+# Current directory: /scratch/ravic/test/PORT_Test1/makefile
+# Command line: vitis_analyzer ../build/HBM_banksall/vadd_hw.xclbin.run_summary
+# Log file: /scratch/ravic/test/PORT_Test1/makefile/vitis_analyzer.log
+# Journal file: /scratch/ravic/test/PORT_Test1/makefile/vitis_analyzer.jou
 #-----------------------------------------------------------
 start_gui
 create_project dummy
