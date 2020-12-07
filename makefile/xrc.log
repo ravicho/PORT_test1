@@ -1,13 +1,13 @@
-Sun Dec  6 22:39:58 2020: Server was asked to start on port: '38801'
-Sun Dec  6 22:39:58 2020: Server is using token UUID: '0217f3e9-f497-4a62-a9fe-70a8e01f6661'
-Sun Dec  6 22:39:58 2020: Attempting to start server on port '38801'
-Sun Dec  6 22:39:58 2020: XRC main fifo: created main fifo '/tmp/xrcmain0217f3e9-f497-4a62-a9fe-70a8e01f6661', fd read = 12
-Sun Dec  6 22:39:58 2020: Running Rule Check Server
-Sun Dec  6 22:39:58 2020: Version 1.6.1
-Sun Dec  6 22:39:59 2020: Rule Check Server: Accepted socket connection from client
-Sun Dec  6 22:39:59 2020: EXCHANGE_TOKEN received, server token: 0217f3e9-f497-4a62-a9fe-70a8e01f6661, passed token: 0217f3e9-f497-4a62-a9fe-70a8e01f6661
-Sun Dec  6 22:39:59 2020: SESSION_MGR: creating session with session uuid: 'd7eaf7f6-44ef-4374-875c-a3768e5f3a54' and name 'v++_link_vadd_hw'
-Sun Dec  6 22:40:04 2020: Rule Check Server: Accepted socket connection from client
-Sun Dec  6 22:40:44 2020: Rule Check Server: Accepted socket connection from client
-Sun Dec  6 22:51:12 2020: Rule Check Server: Accepted socket connection from client
-Sun Dec  6 23:55:04 2020: SESSION_MGR: closing session for UUID 'd7eaf7f6-44ef-4374-875c-a3768e5f3a54' with name 'v++_link_vadd_hw'
+Mon Dec  7 12:30:36 2020: Server was asked to start on port: '39583'
+Mon Dec  7 12:30:36 2020: Server is using token UUID: '6480c3fd-82a4-498d-8337-577ec95dba8e'
+Mon Dec  7 12:30:36 2020: Attempting to start server on port '39583'
+Mon Dec  7 12:30:36 2020: XRC main fifo: created main fifo '/tmp/xrcmain6480c3fd-82a4-498d-8337-577ec95dba8e', fd read = 12
+Mon Dec  7 12:30:36 2020: Running Rule Check Server
+Mon Dec  7 12:30:36 2020: Version 1.6.1
+Mon Dec  7 12:30:37 2020: Rule Check Server: Accepted socket connection from client
+Mon Dec  7 12:30:37 2020: EXCHANGE_TOKEN received, server token: 6480c3fd-82a4-498d-8337-577ec95dba8e, passed token: 6480c3fd-82a4-498d-8337-577ec95dba8e
+Mon Dec  7 12:30:37 2020: SESSION_MGR: creating session with session uuid: 'da2f7e2b-12a6-4901-9dca-2c3f536aeac0' and name 'v++_link_vadd_hw'
+Mon Dec  7 12:30:42 2020: Rule Check Server: Accepted socket connection from client
+Mon Dec  7 12:31:26 2020: Rule Check Server: Accepted socket connection from client
+Mon Dec  7 12:44:04 2020: Rule Check Server: Accepted socket connection from client
+Mon Dec  7 13:49:48 2020: SESSION_MGR: closing session for UUID 'da2f7e2b-12a6-4901-9dca-2c3f536aeac0' with name 'v++_link_vadd_hw'
