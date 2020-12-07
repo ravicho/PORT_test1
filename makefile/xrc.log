@@ -1,0 +1,13 @@
+Sun Dec  6 20:05:58 2020: Server was asked to start on port: '32839'
+Sun Dec  6 20:05:58 2020: Server is using token UUID: 'f52cc420-f507-4c9e-9aae-80b0fabbf919'
+Sun Dec  6 20:05:58 2020: Attempting to start server on port '32839'
+Sun Dec  6 20:05:58 2020: XRC main fifo: created main fifo '/tmp/xrcmainf52cc420-f507-4c9e-9aae-80b0fabbf919', fd read = 11
+Sun Dec  6 20:05:58 2020: Running Rule Check Server
+Sun Dec  6 20:05:58 2020: Version 1.6.1
+Sun Dec  6 20:05:59 2020: Rule Check Server: Accepted socket connection from client
+Sun Dec  6 20:05:59 2020: EXCHANGE_TOKEN received, server token: f52cc420-f507-4c9e-9aae-80b0fabbf919, passed token: f52cc420-f507-4c9e-9aae-80b0fabbf919
+Sun Dec  6 20:05:59 2020: SESSION_MGR: creating session with session uuid: '2bd316ac-872b-42a7-82a7-f4497167e5d0' and name 'v++_link_vadd_hw'
+Sun Dec  6 20:06:04 2020: Rule Check Server: Accepted socket connection from client
+Sun Dec  6 20:07:01 2020: Rule Check Server: Accepted socket connection from client
+Sun Dec  6 20:21:18 2020: Rule Check Server: Accepted socket connection from client
+Sun Dec  6 21:20:18 2020: SESSION_MGR: closing session for UUID '2bd316ac-872b-42a7-82a7-f4497167e5d0' with name 'v++_link_vadd_hw'

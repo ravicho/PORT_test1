@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 422.288 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/reference_files/kernel.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 2.25 seconds. CPU system time: 0.28 seconds. Elapsed time: 2.58 seconds; current allocated memory: 422.933 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vitis&apos; flow target." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;minRand(unsigned int, int)&apos; into &apos;vadd&apos; (/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/reference_files/kernel.cpp:85:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 3.29 seconds. CPU system time: 0.44 seconds. Elapsed time: 3.85 seconds; current allocated memory: 424.293 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 424.310 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1493]" key="HLS 200-1493" tag="" content="Running only source code synthesis checks, skipping scheduling and RTL generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 5.54 seconds. CPU system time: 0.72 seconds. Elapsed time: 6.45 seconds; current allocated memory: 424.313 MB." resolution=""/>
+</Messages>

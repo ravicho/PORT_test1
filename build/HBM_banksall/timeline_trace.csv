@@ -1,0 +1,51 @@
+Timeline Trace
+Generated on: 2020-12-06 21:20:25
+Msec since Epoch: 1607318425123
+Profiled application: host
+Target platform: Xilinx
+Tool version: 2020.2
+XRT build version: 2.8.743
+Build version branch: 2020.2
+Build version hash: 77d5484b5c4daa691a7f78235053fb036829b1e9
+Build version date: N/A 
+
+
+Time_msec,Name,Event,Address_Port,Size,Latency_cycles,Start_cycles,End_cycles,Latency_usec,Start_msec,End_msec,
+6571.998413,clGetPlatformIDs|General,START,,,,,,,,,,,0,
+6572.03162,clGetPlatformIDs|General,END,,,,,,,,,,,0,
+6572.038035,clGetPlatformIDs|General,START,,,,,,,,,,,1,
+6572.04203,clGetPlatformIDs|General,END,,,,,,,,,,,1,
+6572.04894,clGetPlatformInfo|General,START,,,,,,,,,,,2,
+6572.053217,clGetPlatformInfo|General,END,,,,,,,,,,,2,
+6572.056733,clGetPlatformInfo|General,START,,,,,,,,,,,3,
+6572.060179,clGetPlatformInfo|General,END,,,,,,,,,,,3,
+6572.089267,clGetDeviceIDs|General,START,,,,,,,,,,,4,
+6572.098388,clGetDeviceIDs|General,END,,,,,,,,,,,4,
+6572.102062,clGetDeviceIDs|General,START,,,,,,,,,,,5,
+6572.105547,clGetDeviceIDs|General,END,,,,,,,,,,,5,
+6572.11059,clRetainDevice|General,START,,,,,,,,,,,6,
+6572.114561,clRetainDevice|General,END,,,,,,,,,,,6,
+6572.11856,clRetainDevice|General,START,,,,,,,,,,,7,
+6572.122094,clRetainDevice|General,END,,,,,,,,,,,7,
+6572.125815,clGetDeviceInfo|General,START,,,,,,,,,,,8,
+6573.511875,clGetDeviceInfo|General,END,,,,,,,,,,,8,
+6573.521706,clGetDeviceInfo|General,START,,,,,,,,,,,9,
+6573.526874,clGetDeviceInfo|General,END,,,,,,,,,,,9,
+6573.539723,clCreateContext|General,START,,,,,,,,,,,10,
+6575.310537,clCreateContext|General,END,,,,,,,,,,,10,
+6575.320264,clCreateCommandQueue|General,START,,,,,,,,,,,11,
+6575.330623,clCreateCommandQueue|General,END,,,,,,,,,,,11,
+6594.493989,clCreateProgramWithBinary|General,START,,,,,,,,,,,12,
+7157.973622,clCreateProgramWithBinary|General,END,,,,,,,,,,,12,
+Footer,begin
+Project,,
+Stall profiling,false,
+Target,Software Emulation,
+Platform,,
+Device,xilinx:pcie-hw-em:7v3:1.0-0,begin
+DDR Banks,begin
+Bank,0,0X000000000
+DDR Banks,end
+Device,xilinx:pcie-hw-em:7v3:1.0-0,end
+Footer,end
+

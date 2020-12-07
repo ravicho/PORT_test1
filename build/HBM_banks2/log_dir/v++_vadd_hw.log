@@ -1,0 +1,284 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link
+	Log files: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/log_dir/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/vadd_hw.xclbin.link_summary, at Sun Dec  6 17:40:40 2020
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Dec  6 17:40:40 2020
+INFO: [v++ 60-1315] Creating rulecheck session with output '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link/v++_link_vadd_hw_guidance.html', at Sun Dec  6 17:40:41 2020
+INFO: [v++ 60-895]   Target platform: /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [17:40:45] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/vadd_hw.xo --config /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/syslinkConfig.ini --xpfm /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target hw --output_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int --temp_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Sun Dec  6 17:40:47 2020
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/vadd_hw.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [17:40:47] build_xd_ip_db started: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/hw.hpfm -clkid 0 -ip /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/iprepo/xilinx_com_hls_vadd_1_0,vadd -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [17:40:53] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 26304 ; free virtual = 172775
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [17:40:53] cfgen started: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/cfgen  -sp vadd_1.in1:HBM[0:1] -sp vadd_1.in2:HBM[2:3] -sp vadd_1.out:HBM[4:5] -dmclkid 0 -r /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: vadd, num: 1  {vadd_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: in1, sptag: HBM[0:1]
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: in2, sptag: HBM[2:3]
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: out, sptag: HBM[4:5]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.in1 to HBM[0:1] for directive vadd_1.in1:HBM[0:1]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.in2 to HBM[2:3] for directive vadd_1.in2:HBM[2:3]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.out to HBM[4:5] for directive vadd_1.out:HBM[4:5]
+INFO: [SYSTEM_LINK 82-37] [17:40:57] cfgen finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 26306 ; free virtual = 172776
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [17:40:57] cf2bd started: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.xsd --temp_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link --output_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int --target_bd ulp.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd ulp.bd -dn dr -dp /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [17:41:00] cf2bd finished successfully
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 26295 ; free virtual = 172770
+INFO: [v++ 60-1441] [17:41:00] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 26336 ; free virtual = 172807
+INFO: [v++ 60-1443] [17:41:00] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/sdsl.dat -rtd /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/cf2sw.rtd -nofilter /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/cf2sw_full.rtd -xclbin /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/xclbin_orig.xml -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [17:41:03] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 26340 ; free virtual = 172811
+INFO: [v++ 60-1443] [17:41:03] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [17:41:04] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:01 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 26003 ; free virtual = 172473
+INFO: [v++ 60-1443] [17:41:04] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u50_gen3x16_xdma_201920_3 -g --remote_ip_cache /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/.ipcache --output_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int --log_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/log_dir/link --report_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link --config /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vplConfig.ini -k /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link --no-info --iprepo /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/xo/ip_repo/xilinx_com_hls_vadd_1_0 --messageDb /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link/vpl.pb /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+
+****** vpl v2020.2 (64-bit)
+  **** SW Build (by xbuild) on 2020-11-18-05:13:29
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/kernel_info.dat'.
+INFO: [VPL 74-74] Compiler Version string: 2020.2
+INFO: [VPL 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [VPL 60-1317] Skipping hardware platform extraction and using '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa' instead.
+WARNING: /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+[17:41:28] Run vpl: Step create_project: Started
+Creating Vivado project.
+[17:41:30] Run vpl: Step create_project: Completed
+[17:41:30] Run vpl: Step create_bd: Started
+[17:42:48] Run vpl: Step create_bd: RUNNING...
+[17:43:12] Run vpl: Step create_bd: Completed
+[17:43:12] Run vpl: Step update_bd: Started
+[17:43:17] Run vpl: Step update_bd: Completed
+[17:43:17] Run vpl: Step generate_target: Started
+[17:44:34] Run vpl: Step generate_target: RUNNING...
+[17:45:04] Run vpl: Step generate_target: Completed
+[17:45:04] Run vpl: Step config_hw_runs: Started
+[17:45:07] Run vpl: Step config_hw_runs: Completed
+[17:45:07] Run vpl: Step synth: Started
+[17:45:39] Block-level synthesis in progress, 0 of 6 jobs complete, 5 jobs running.
+[17:46:10] Block-level synthesis in progress, 0 of 6 jobs complete, 5 jobs running.
+[17:46:41] Block-level synthesis in progress, 0 of 6 jobs complete, 5 jobs running.
+[17:47:12] Block-level synthesis in progress, 1 of 6 jobs complete, 4 jobs running.
+[17:47:43] Block-level synthesis in progress, 4 of 6 jobs complete, 1 job running.
+[17:48:14] Block-level synthesis in progress, 5 of 6 jobs complete, 0 jobs running.
+[17:48:44] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[17:49:15] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[17:49:46] Block-level synthesis in progress, 5 of 6 jobs complete, 1 job running.
+[17:50:17] Top-level synthesis in progress.
+[17:50:47] Top-level synthesis in progress.
+[17:51:18] Top-level synthesis in progress.
+[17:51:49] Run vpl: Step synth: Completed
+[17:51:49] Run vpl: Step impl: Started
+[18:00:04] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 18m 57s 
+
+[18:00:04] Starting logic optimization..
+[18:00:35] Phase 1 Retarget
+[18:00:35] Phase 2 Constant propagation
+[18:01:06] Phase 3 Sweep
+[18:01:37] Phase 4 BUFG optimization
+[18:01:37] Phase 5 Shift Register Optimization
+[18:01:37] Phase 6 Post Processing Netlist
+[18:05:44] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 05m 40s 
+
+[18:05:44] Starting logic placement..
+[18:06:15] Phase 1 Placer Initialization
+[18:06:15] Phase 1.1 Placer Initialization Netlist Sorting
+[18:08:19] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[18:08:50] Phase 1.3 Build Placer Netlist Model
+[18:09:52] Phase 1.4 Constrain Clocks/Macros
+[18:09:52] Phase 2 Global Placement
+[18:09:52] Phase 2.1 Floorplanning
+[18:10:22] Phase 2.1.1 Partition Driven Placement
+[18:10:22] Phase 2.1.1.1 PBP: Partition Driven Placement
+[18:10:53] Phase 2.1.1.2 PBP: Clock Region Placement
+[18:11:55] Phase 2.1.1.3 PBP: Compute Congestion
+[18:12:26] Phase 2.1.1.4 PBP: UpdateTiming
+[18:12:26] Phase 2.1.1.5 PBP: Add part constraints
+[18:12:26] Phase 2.2 Update Timing before SLR Path Opt
+[18:12:26] Phase 2.3 Global Placement Core
+[18:16:34] Phase 2.3.1 Physical Synthesis In Placer
+[18:18:07] Phase 3 Detail Placement
+[18:18:07] Phase 3.1 Commit Multi Column Macros
+[18:18:37] Phase 3.2 Commit Most Macros & LUTRAMs
+[18:19:08] Phase 3.3 Small Shape DP
+[18:19:08] Phase 3.3.1 Small Shape Clustering
+[18:19:08] Phase 3.3.2 Flow Legalize Slice Clusters
+[18:19:39] Phase 3.3.3 Slice Area Swap
+[18:20:10] Phase 3.4 Place Remaining
+[18:20:10] Phase 3.5 Re-assign LUT pins
+[18:20:10] Phase 3.6 Pipeline Register Optimization
+[18:20:10] Phase 3.7 Fast Optimization
+[18:20:41] Phase 4 Post Placement Optimization and Clean-Up
+[18:20:41] Phase 4.1 Post Commit Optimization
+[18:21:12] Phase 4.1.1 Post Placement Optimization
+[18:21:43] Phase 4.1.1.1 BUFG Insertion
+[18:21:43] Phase 1 Physical Synthesis Initialization
+[18:21:43] Phase 4.1.1.2 BUFG Replication
+[18:22:14] Phase 4.1.1.3 Replication
+[18:22:45] Phase 4.2 Post Placement Cleanup
+[18:22:45] Phase 4.3 Placer Reporting
+[18:22:45] Phase 4.3.1 Print Estimated Congestion
+[18:22:45] Phase 4.4 Final Placement Cleanup
+[18:26:53] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 21m 09s 
+
+[18:26:53] Starting logic routing..
+[18:27:55] Phase 1 Build RT Design
+[18:28:26] Phase 2 Router Initialization
+[18:28:57] Phase 2.1 Fix Topology Constraints
+[18:30:30] Phase 2.2 Pre Route Cleanup
+[18:30:30] Phase 2.3 Global Clock Net Routing
+[18:31:01] Phase 2.4 Update Timing
+[18:32:03] Phase 2.5 Update Timing for Bus Skew
+[18:32:03] Phase 2.5.1 Update Timing
+[18:32:34] Phase 3 Initial Routing
+[18:32:34] Phase 3.1 Global Routing
+[18:32:34] Phase 4 Rip-up And Reroute
+[18:32:34] Phase 4.1 Global Iteration 0
+[18:34:38] Phase 4.2 Global Iteration 1
+[18:35:09] Phase 4.3 Global Iteration 2
+[18:35:40] Phase 5 Delay and Skew Optimization
+[18:35:40] Phase 5.1 Delay CleanUp
+[18:35:40] Phase 5.1.1 Update Timing
+[18:36:11] Phase 5.2 Clock Skew Optimization
+[18:36:11] Phase 6 Post Hold Fix
+[18:36:11] Phase 6.1 Hold Fix Iter
+[18:36:11] Phase 6.1.1 Update Timing
+[18:36:42] Phase 7 Leaf Clock Prog Delay Opt
+[18:37:13] Phase 8 Route finalize
+[18:37:13] Phase 9 Verifying routed nets
+[18:37:13] Phase 10 Depositing Routes
+[18:37:44] Phase 11 Post Router Timing
+[18:37:44] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 10m 50s 
+
+[18:37:44] Starting bitstream generation..
+[18:45:00] Creating bitmap...
+[18:49:39] Writing bitstream ./level0_i_ulp_my_rm_partial.bit...
+[18:49:39] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 11m 54s 
+[18:50:19] Run vpl: Step impl: Completed
+[18:50:20] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [18:50:23] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:33 ; elapsed = 01:09:18 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 25458 ; free virtual = 172837
+INFO: [v++ 60-1443] [18:50:23] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-991] clock name 'clk_kernel2_in' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clk_kernel_in' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: clk_kernel2_in = 500, Kernel (DATA) clock: clk_kernel_in = 300
+INFO: [v++ 60-1453] Command Line: cf2sw -a /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/address_map.xml -sdsl /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/sdsl.dat -xclbin /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/xclbin_orig.xml -rtd /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.rtd -o /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-2311] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, rtdInputFilePath: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.rtd
+INFO: [v++ 60-2312] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, systemDiagramOutputFilePath: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json
+INFO: [v++ 60-1618] Launching 
+INFO: [v++ 60-1441] [18:50:25] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 25457 ; free virtual = 172836
+INFO: [v++ 60-1443] [18:50:25] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.rtd --append-section :JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw_xml.rtd --add-section BUILD_METADATA:JSON:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw_build.rtd --add-section EMBEDDED_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.xml --add-section SYSTEM_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banks2/vadd_hw.xclbin
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+XRT Build Version: 2.8.743 (2020.2)
+       Build Date: 2020-11-16 08:21:45
+          Hash ID: 77d5484b5c4daa691a7f78235053fb036829b1e9
+Creating a default 'in-memory' xclbin image.
+
+Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
+Size   : 728 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/debug_ip_layout.rtd'
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 31723192 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3005 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3298 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/vadd_hw.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 14469 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (31773959 bytes) to the output file: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banks2/vadd_hw.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [18:50:25] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 25457 ; free virtual = 172836
+INFO: [v++ 60-1443] [18:50:25] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banks2/vadd_hw.xclbin.info --input /wrk/xsjhdnobkup5/ravic/work/PORT_test1/makefile/././../build/HBM_banks2/vadd_hw.xclbin
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [18:50:26] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.42 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 25458 ; free virtual = 172837
+INFO: [v++ 60-1443] [18:50:26] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [18:50:26] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 25458 ; free virtual = 172837
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link/system_estimate_vadd_hw.xtxt
+INFO: [v++ 60-586] Created /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/vadd_hw.ltx
+INFO: [v++ 60-586] Created ././../build/HBM_banks2/vadd_hw.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link/v++_link_vadd_hw_guidance.html
+	Timing Report: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/report_dir/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt
+	Vivado Log: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/log_dir/link/vivado.log
+	Steps Log File: /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/log_dir/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks2/vadd_hw.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 1h 9m 58s
+INFO: [v++ 60-1653] Closing dispatch client.

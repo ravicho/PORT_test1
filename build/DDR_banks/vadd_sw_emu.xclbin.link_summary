@@ -1,0 +1,570 @@
+<ENTRY>
+{
+ "thisFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/vadd_sw_emu.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:13 2020",
+ "timestampMillis": "1607290933473",
+ "buildStep": {
+  "cmdId": "274333ea-230b-401f-b087-cba61398311a",
+  "name": "v++",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/link.steps.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp vivado_param:project.writeIntermediateCheckpoints=1 --xp \"param:compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -g -t sw_emu -R 1 --platform xilinx_u200_xdma_201830_2 --profile.data all:all:all --profile.stall all:all:all --temp_dir ././../build/DDR_banks/temp_dir --report_dir ././../build/DDR_banks/report_dir --log_dir ././../build/DDR_banks/log_dir --config /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/DDR_banks.cfg -I./../reference_files -DNDDR_BANKS= ././../build/DDR_banks/vadd_sw_emu.xo -o ././../build/DDR_banks/vadd_sw_emu.xclbin ",
+  "args": [
+   "-l",
+   "-g",
+   "-t",
+   "sw_emu",
+   "-R",
+   "1",
+   "--platform",
+   "xilinx_u200_xdma_201830_2",
+   "--profile.data",
+   "all:all:all",
+   "--profile.stall",
+   "all:all:all",
+   "--temp_dir",
+   "././../build/DDR_banks/temp_dir",
+   "--report_dir",
+   "././../build/DDR_banks/report_dir",
+   "--log_dir",
+   "././../build/DDR_banks/log_dir",
+   "--config",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/DDR_banks.cfg",
+   "-I./../reference_files",
+   "-DNDDR_BANKS=",
+   "././../build/DDR_banks/vadd_sw_emu.xo",
+   "-o",
+   "././../build/DDR_banks/vadd_sw_emu.xclbin"
+  ],
+  "iniFiles": [
+   {
+    "path": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/DDR_banks.cfg",
+    "content": "[connectivity]\nsp=vadd_1.in1:DDR[0]\nsp=vadd_1.in2:DDR[0]\nsp=vadd_1.out:DDR[1]\n"
+   }
+  ],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:13 2020",
+ "timestampMillis": "1607290933475",
+ "status": {
+  "cmdId": "274333ea-230b-401f-b087-cba61398311a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Dec  6 13:42:24 2020",
+ "timestampMillis": "1607290944019",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u200_xdma_201830_2.dsa",
+  "platformDirectory": "/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u200_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "vadd_sw_emu",
+    "file": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/vadd_sw_emu.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vadd",
+     "file": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/vadd_sw_emu.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/xo/vadd/vadd/cpu_sources/kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "vadd_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:24 2020",
+ "timestampMillis": "1607290944028",
+ "buildStep": {
+  "cmdId": "eea914ce-4e61-4028-a423-8f12d90d7c90",
+  "name": "regiongen",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_regiongen.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../runtime/bin/regiongen_new -v -m /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.xml -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.xml",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:24 2020",
+ "timestampMillis": "1607290944029",
+ "status": {
+  "cmdId": "eea914ce-4e61-4028-a423-8f12d90d7c90",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:25 2020",
+ "timestampMillis": "1607290945659",
+ "status": {
+  "cmdId": "eea914ce-4e61-4028-a423-8f12d90d7c90",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:25 2020",
+ "timestampMillis": "1607290945669",
+ "buildStep": {
+  "cmdId": "14d02824-b5d4-47ef-b95f-5c0b5a66418a",
+  "name": "gcc",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/vadd_kernel_gcc.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../include -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../common/technology/autopilot/opencl -std=c++14 -g -D NDDR_BANKS= -I /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/reference_files -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/kernel.o -MP -MF obj/kernel.Cd /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/xo/vadd/vadd/cpu_sources/kernel.cpp -o obj/kernel.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../include",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../common/technology/autopilot/opencl",
+   "-std=c++14",
+   "-g",
+   "-D",
+   "NDDR_BANKS=",
+   "-I",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/reference_files",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/kernel.o",
+   "-MP",
+   "-MF",
+   "obj/kernel.Cd",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/xo/vadd/vadd/cpu_sources/kernel.cpp",
+   "-o",
+   "obj/kernel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:25 2020",
+ "timestampMillis": "1607290945670",
+ "status": {
+  "cmdId": "14d02824-b5d4-47ef-b95f-5c0b5a66418a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:26 2020",
+ "timestampMillis": "1607290946966",
+ "status": {
+  "cmdId": "14d02824-b5d4-47ef-b95f-5c0b5a66418a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:26 2020",
+ "timestampMillis": "1607290946969",
+ "buildStep": {
+  "cmdId": "fd90cfd6-63d2-4c52-aa69-12ecb2cb765f",
+  "name": "ar",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/vadd_ar.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/binutils-2.26/bin/ar -cr /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/vadd.csim_cu.a /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/obj/kernel.o",
+  "args": [
+   "-cr",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/vadd.csim_cu.a",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd/obj/kernel.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:26 2020",
+ "timestampMillis": "1607290946970",
+ "status": {
+  "cmdId": "fd90cfd6-63d2-4c52-aa69-12ecb2cb765f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:26 2020",
+ "timestampMillis": "1607290946997",
+ "status": {
+  "cmdId": "fd90cfd6-63d2-4c52-aa69-12ecb2cb765f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:27 2020",
+ "timestampMillis": "1607290947001",
+ "buildStep": {
+  "cmdId": "b3465a74-89d0-4a1c-9a75-ea39fe8b3c69",
+  "name": "g++",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_xcl_top_gpp.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/g++ -I . -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../include -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../data/emulation/include -I /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../include",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/../data/emulation/include",
+   "-I",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:27 2020",
+ "timestampMillis": "1607290947002",
+ "status": {
+  "cmdId": "b3465a74-89d0-4a1c-9a75-ea39fe8b3c69",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948390",
+ "status": {
+  "cmdId": "b3465a74-89d0-4a1c-9a75-ea39fe8b3c69",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948393",
+ "buildStep": {
+  "cmdId": "63991daf-a55b-4dc0-9f25-38ab3e368f91",
+  "name": "g++",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_top_gpp.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,vadd_sw_emu.so -o vadd_sw_emu.so vadd/vadd.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lib/lnx64.o -lhlsmathsim -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0 -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,vadd_sw_emu.so",
+   "-o",
+   "vadd_sw_emu.so",
+   "vadd/vadd.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis_HLS/2020.2/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948394",
+ "status": {
+  "cmdId": "63991daf-a55b-4dc0-9f25-38ab3e368f91",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948584",
+ "status": {
+  "cmdId": "63991daf-a55b-4dc0-9f25-38ab3e368f91",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948589",
+ "report": {
+  "path": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948597",
+ "buildStep": {
+  "cmdId": "ce207466-e537-4c71-980c-3f3449096dfd",
+  "name": "xclbinutil",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_xclbinutil.log",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/xclbinutil --add-section BITSTREAM:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.so --force --target sw_emu --add-section CLOCK_FREQ_TOPOLOGY:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_xml.rtd --add-section BUILD_METADATA:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_build.rtd --add-section EMBEDDED_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.xml --add-section DEBUG_DATA:RAW:/dev/null --output /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/DDR_banks/vadd_sw_emu.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/link/int/vadd_sw_emu.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--output",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/DDR_banks/vadd_sw_emu.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948598",
+ "status": {
+  "cmdId": "ce207466-e537-4c71-980c-3f3449096dfd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948753",
+ "status": {
+  "cmdId": "ce207466-e537-4c71-980c-3f3449096dfd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948755",
+ "buildStep": {
+  "cmdId": "a3003394-cb0f-48da-9e9f-3e16b8982106",
+  "name": "xclbinutil",
+  "logFile": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/vadd_sw_emu.xclbin.info",
+  "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/xclbinutil --quiet --info --input /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/DDR_banks/vadd_sw_emu.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/DDR_banks/vadd_sw_emu.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948756",
+ "status": {
+  "cmdId": "a3003394-cb0f-48da-9e9f-3e16b8982106",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:28 2020",
+ "timestampMillis": "1607290948881",
+ "status": {
+  "cmdId": "a3003394-cb0f-48da-9e9f-3e16b8982106",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec  6 13:42:29 2020",
+ "timestampMillis": "1607290949007",
+ "report": {
+  "path": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/report_dir/link/v++_link_vadd_sw_emu_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec  6 13:42:29 2020",
+ "timestampMillis": "1607290949008",
+ "report": {
+  "path": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/v++_link_vadd_sw_emu_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec  6 13:42:29 2020",
+ "timestampMillis": "1607290949009",
+ "report": {
+  "path": "/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/log_dir/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec  6 13:42:29 2020",
+ "timestampMillis": "1607290949012",
+ "status": {
+  "cmdId": "274333ea-230b-401f-b087-cba61398311a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

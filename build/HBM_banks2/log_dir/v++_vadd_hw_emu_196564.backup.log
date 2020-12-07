@@ -1,0 +1,12 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/vadd_hw_emu
+	Log files: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/log_dir/vadd_hw_emu
+INFO: [v++ 60-1548] Creating build summary session with primary output /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/vadd_hw_emu.xo.compile_summary, at Wed Dec  2 08:42:17 2020
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Wed Dec  2 08:42:17 2020
+INFO: [v++ 60-1315] Creating rulecheck session with output '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/vadd_hw_emu/v++_compile_vadd_hw_emu_guidance.html', at Wed Dec  2 08:42:19 2020
+INFO: [v++ 60-895]   Target platform: /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'vadd'

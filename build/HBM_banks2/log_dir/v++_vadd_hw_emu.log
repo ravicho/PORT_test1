@@ -1,0 +1,192 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/link
+	Log files: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/log_dir/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/vadd_hw_emu.xclbin.link_summary, at Wed Dec  2 08:46:52 2020
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Wed Dec  2 08:46:52 2020
+INFO: [v++ 60-1315] Creating rulecheck session with output '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/link/v++_link_vadd_hw_emu_guidance.html', at Wed Dec  2 08:46:53 2020
+INFO: [v++ 60-895]   Target platform: /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [08:46:57] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/vadd_hw_emu.xo --config /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/syslinkConfig.ini --xpfm /proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm --target emu --output_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int --temp_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Wed Dec  2 08:46:59 2020
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/vadd_hw_emu.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [08:46:59] build_xd_ip_db started: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/emu/emu.hpfm -clkid 0 -ip /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/iprepo/xilinx_com_hls_vadd_1_0,vadd -o /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [08:47:05] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 23060 ; free virtual = 167584
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [08:47:05] cfgen started: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/bin/cfgen  -sp vadd_1.in1:HBM[0:1] -sp vadd_1.in2:HBM[2:3] -sp vadd_1.out:HBM[4:5] -dmclkid 0 -r /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: vadd, num: 1  {vadd_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: in1, sptag: HBM[0:1]
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: in2, sptag: HBM[2:3]
+INFO: [CFGEN 83-0]   kernel: vadd_1, k_port: out, sptag: HBM[4:5]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.in1 to HBM[0:1] for directive vadd_1.in1:HBM[0:1]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.in2 to HBM[2:3] for directive vadd_1.in2:HBM[2:3]
+INFO: [CFGEN 83-2228] Creating mapping for argument vadd_1.out to HBM[4:5] for directive vadd_1.out:HBM[4:5]
+INFO: [SYSTEM_LINK 82-37] [08:47:10] cfgen finished successfully
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 23070 ; free virtual = 167587
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [08:47:10] cf2bd started: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.xsd --temp_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link --output_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int --target_bd emu/emu.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd emu/emu.bd -dn dr -dp /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [08:47:13] cf2bd finished successfully
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1663.324 ; gain = 0.000 ; free physical = 23063 ; free virtual = 167582
+INFO: [v++ 60-1441] [08:47:13] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 23107 ; free virtual = 167622
+INFO: [v++ 60-1443] [08:47:13] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/sdsl.dat -rtd /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/cf2sw.rtd -nofilter /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/cf2sw_full.rtd -xclbin /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/xclbin_orig.xml -o /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [08:47:16] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 23109 ; free virtual = 167624
+INFO: [v++ 60-1443] [08:47:16] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [08:47:18] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:01 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 22739 ; free virtual = 167251
+INFO: [v++ 60-1443] [08:47:18] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw_emu -f xilinx_u50_gen3x16_xdma_201920_3 -g --remote_ip_cache /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/.ipcache --output_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int --log_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/log_dir/link --report_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/link --config /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vplConfig.ini -k /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link --emulation_mode debug_waveform --no-info --iprepo /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/xo/ip_repo/xilinx_com_hls_vadd_1_0 --messageDb /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link/vpl.pb /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+
+****** vpl v2020.2 (64-bit)
+  **** SW Build (by xbuild) on 2020-11-18-05:13:29
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/kernel_info.dat'.
+INFO: [VPL 74-74] Compiler Version string: 2020.2
+INFO: [VPL 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [VPL 60-1317] Skipping hardware platform extraction and using '/proj/xbuilds/2020.2_daily_latest/internal_platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/xsa' instead.
+WARNING: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+[08:47:40] Run vpl: Step create_project: Started
+Creating Vivado project.
+[08:47:41] Run vpl: Step create_project: Completed
+[08:47:41] Run vpl: Step create_bd: Started
+[08:48:39] Run vpl: Step create_bd: Completed
+[08:48:39] Run vpl: Step update_bd: Started
+[08:48:45] Run vpl: Step update_bd: Completed
+[08:48:45] Run vpl: Step generate_target: Started
+[08:50:03] Run vpl: Step generate_target: RUNNING...
+[08:50:45] Run vpl: Step generate_target: Completed
+[08:50:45] Run vpl: Step config_hw_emu.gen_scripts: Started
+[08:51:46] Run vpl: Step config_hw_emu.gen_scripts: Completed
+[08:51:46] Run vpl: Step config_hw_emu.compile: Started
+[08:52:52] Run vpl: Step config_hw_emu.compile: Completed
+[08:52:52] Run vpl: Step config_hw_emu.elaborate: Started
+[08:53:42] Run vpl: Step config_hw_emu.elaborate: Completed
+[08:53:43] Run vpl: FINISHED. Run Status: config_hw_emu.elaborate Complete!
+INFO: [v++ 60-1441] [08:53:48] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:08 ; elapsed = 00:06:30 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 21622 ; free virtual = 167572
+INFO: [v++ 60-1443] [08:53:48] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+WARNING: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+WARNING: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+INFO: [v++ 60-991] clock name 'kernel2_clk/clk' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'kernel_clk/clk' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'hbm_aclk' (clock ID '') is being mapped to clock name 'hbm_aclk' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: hbm_aclk = 450, Kernel (KERNEL) clock: kernel2_clk/clk = 500, Kernel (DATA) clock: kernel_clk/clk = 300
+INFO: [v++ 60-1453] Command Line: cf2sw -a /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/address_map.xml -sdsl /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/sdsl.dat -xclbin /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/xclbin_orig.xml -rtd /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.rtd -o /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+WARNING: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+WARNING: /proj/xbuilds/SWIP/2020.2_1120_2158/installs/lin64/Vitis/2020.2/tps/lnx64/jre9.0.4 does not exist.
+INFO: [v++ 60-2311] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, rtdInputFilePath: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.rtd
+INFO: [v++ 60-2312] HPISystemDiagram::writeSystemDiagramAfterRunningVivado, systemDiagramOutputFilePath: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json
+INFO: [v++ 60-1618] Launching 
+INFO: [v++ 60-1441] [08:54:05] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 21586 ; free virtual = 167571
+INFO: [v++ 60-1443] [08:54:05] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_DATA:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/consolidated.cf --add-section DEBUG_IP_LAYOUT:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/behav.xse --force --target hw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.rtd --append-section :JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu_xml.rtd --add-section BUILD_METADATA:JSON:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu_build.rtd --add-section EMBEDDED_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.xml --add-section SYSTEM_METADATA:RAW:/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u50_gen3x16_xdma_201920_3 --output /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/HBM_banks2/vadd_hw_emu.xclbin
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+XRT Build Version: 2.8.743 (2020.2)
+       Build Date: 2020-11-16 08:21:45
+          Hash ID: 77d5484b5c4daa691a7f78235053fb036829b1e9
+Creating a default 'in-memory' xclbin image.
+
+Section: 'DEBUG_DATA'(4) was successfully added.
+Size   : 196528 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/consolidated.cf'
+
+Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
+Size   : 728 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/debug_ip_layout.rtd'
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 63173071 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/behav.xse'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3022 bytes
+Format : JSON
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3309 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/vadd_hw_emu.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 13696 bytes
+Format : RAW
+File   : '/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (63419234 bytes) to the output file: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/HBM_banks2/vadd_hw_emu.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [08:54:05] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.42 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 21527 ; free virtual = 167571
+INFO: [v++ 60-1443] [08:54:05] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/HBM_banks2/vadd_hw_emu.xclbin.info --input /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/makefile/././../build/HBM_banks2/vadd_hw_emu.xclbin
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [08:54:06] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.88 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 21530 ; free virtual = 167574
+INFO: [v++ 60-1443] [08:54:06] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/temp_dir/link/run_link
+INFO: [v++ 60-1441] [08:54:06] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1682.484 ; gain = 0.000 ; free physical = 21531 ; free virtual = 167574
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/link/system_estimate_vadd_hw_emu.xtxt
+INFO: [v++ 60-586] Created ././../build/HBM_banks2/vadd_hw_emu.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/report_dir/link/v++_link_vadd_hw_emu_guidance.html
+	Steps Log File: /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/log_dir/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/HBM_banks2/vadd_hw_emu.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 7m 27s
+INFO: [v++ 60-1653] Closing dispatch client.

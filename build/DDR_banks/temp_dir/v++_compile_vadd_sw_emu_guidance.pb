@@ -1,0 +1,3 @@
+
+¬
+v++_compile_vadd_sw_emu$ea70bbaa-6a84-40ce-88e8-784561650a40üv++  -c -g -t sw_emu -R 1 -k vadd --platform xilinx_u200_xdma_201830_2 --profile.data all:all:all --profile.stall all:all:all --save-temps --temp_dir ././../build/DDR_banks/temp_dir --report_dir ././../build/DDR_banks/report_dir --log_dir ././../build/DDR_banks/log_dir -I./../reference_files -DNDDR_BANKS= ./../reference_files/kernel.cpp -o ././../build/DDR_banks/vadd_sw_emu.xo *}"y/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/report_dir/vadd_sw_emu/v++_compile_vadd_sw_emu_guidance.html2m"i/wrk/xsjhdnobkup5/ravic/work/Port_DDR_to_HBM/build/DDR_banks/temp_dir/v++_compile_vadd_sw_emu_guidance.pb
