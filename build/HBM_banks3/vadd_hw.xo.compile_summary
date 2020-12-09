@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sun Dec  6 18:50:50 2020",
- "timestampMillis": "1607309450423",
+ "dateTimestamp": "Tue Dec  8 16:08:53 2020",
+ "timestampMillis": "1607472533562",
  "buildStep": {
-  "cmdId": "c781818e-9213-4bae-ae15-e3ed1b5132fa",
+  "cmdId": "cd58aa22-f168-4b1a-8890-b38fce456fa7",
   "name": "v++",
   "logFile": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd_hw.steps.log",
   "commandLine": "/proj/xbuilds/SWIP/2020.2_1118_1232/installs/lin64/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp vivado_param:project.writeIntermediateCheckpoints=1 --xp \"param:compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -g -t hw -R 1 -k vadd --platform xilinx_u50_gen3x16_xdma_201920_3 --profile.data all:all:all --profile.stall all:all:all --save-temps --temp_dir ././../build/HBM_banks3/temp_dir --report_dir ././../build/HBM_banks3/report_dir --log_dir ././../build/HBM_banks3/log_dir -I./../reference_files -DNDDR_BANKS=3 ./../reference_files/kernel.cpp -o ././../build/HBM_banks3/vadd_hw.xo ",
@@ -52,10 +52,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Dec  6 18:50:50 2020",
- "timestampMillis": "1607309450425",
+ "dateTimestamp": "Tue Dec  8 16:08:53 2020",
+ "timestampMillis": "1607472533563",
  "status": {
-  "cmdId": "c781818e-9213-4bae-ae15-e3ed1b5132fa",
+  "cmdId": "cd58aa22-f168-4b1a-8890-b38fce456fa7",
   "state": "CS_RUNNING"
  }
 }
@@ -63,8 +63,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sun Dec  6 18:50:55 2020",
- "timestampMillis": "1607309455641",
+ "dateTimestamp": "Tue Dec  8 16:08:58 2020",
+ "timestampMillis": "1607472538484",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u50_gen3x16_xdma_201920_3.xpfm",
   "hardwareDsa": "hw.xsa",
@@ -99,10 +99,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sun Dec  6 18:50:55 2020",
- "timestampMillis": "1607309455650",
+ "dateTimestamp": "Tue Dec  8 16:08:58 2020",
+ "timestampMillis": "1607472538494",
  "buildStep": {
-  "cmdId": "0e4df09c-fc6a-4919-a597-32fcab543fec",
+  "cmdId": "e2c349db-b7d6-43ef-822d-b2f5cc40711a",
   "name": "vitis_hls",
   "logFile": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd/vitis_hls.log",
   "commandLine": "vitis_hls -f /wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd/vadd.tcl -messageDb vitis_hls.pb",
@@ -121,10 +121,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Dec  6 18:50:55 2020",
- "timestampMillis": "1607309455651",
+ "dateTimestamp": "Tue Dec  8 16:08:58 2020",
+ "timestampMillis": "1607472538494",
  "status": {
-  "cmdId": "0e4df09c-fc6a-4919-a597-32fcab543fec",
+  "cmdId": "e2c349db-b7d6-43ef-822d-b2f5cc40711a",
   "state": "CS_RUNNING"
  }
 }
@@ -132,10 +132,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502042",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588297",
  "status": {
-  "cmdId": "0e4df09c-fc6a-4919-a597-32fcab543fec",
+  "cmdId": "e2c349db-b7d6-43ef-822d-b2f5cc40711a",
   "state": "CS_PASSED"
  }
 }
@@ -143,8 +143,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502191",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588416",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd/vadd/solution/.autopilot/db/vadd.design.xml",
   "name": "vadd",
@@ -156,8 +156,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502192",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588417",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd/vadd/solution/.autopilot/db/.message_syn.xml",
   "name": "vadd",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502204",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588424",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/report_dir/vadd_hw/hls_reports/vadd_csynth.rpt",
   "name": "vadd",
@@ -182,8 +182,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502205",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588425",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/vadd_hw/vadd/vadd/solution/syn/report/vadd_csynth.xml",
   "name": "vadd",
@@ -195,8 +195,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502215",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588433",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/report_dir/vadd_hw/system_estimate_vadd_hw.xtxt",
   "name": "",
@@ -208,8 +208,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502488",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588652",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/report_dir/vadd_hw/v++_compile_vadd_hw_guidance.html",
   "name": "",
@@ -221,8 +221,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502489",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588652",
  "report": {
   "path": "/wrk/xsjhdnobkup5/ravic/work/PORT_test1/build/HBM_banks3/temp_dir/v++_compile_vadd_hw_guidance.pb",
   "name": "",
@@ -234,10 +234,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Dec  6 18:51:42 2020",
- "timestampMillis": "1607309502497",
+ "dateTimestamp": "Tue Dec  8 16:09:48 2020",
+ "timestampMillis": "1607472588655",
  "status": {
-  "cmdId": "c781818e-9213-4bae-ae15-e3ed1b5132fa",
+  "cmdId": "cd58aa22-f168-4b1a-8890-b38fce456fa7",
   "state": "CS_PASSED"
  }
 }
