@@ -36,21 +36,16 @@ Description:
 
 
 #define BUFFER_SIZE 1024
-#define NUM_KRNL 4
-
-#define DATA_SIZE 4096
 
 #define VDATA_SIZE 16
 typedef struct v_datatype { unsigned int data[VDATA_SIZE]; } v_dt;
 
+#include <ap_int.h>
 
 // TRIPCOUNT identifier
-const unsigned int c_size = BUFFER_SIZE;
-const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
-const unsigned int c_num = NUM_KRNL * DATA_SIZE / BUFFER_SIZE;
+const unsigned int c_vSize = VDATA_SIZE;
+const unsigned int c_total = 600/VDATA_SIZE;
 
-
-#include <ap_int.h>
 
 
 unsigned int minRand(unsigned int seed, int load) {
@@ -76,80 +71,16 @@ unsigned int minRand(unsigned int seed, int load) {
         in2   (input)     --> Input Vector2
         out   (output)    --> Output Vector
         size  (input)     --> Size of Vector in Integer
-   */
-/*
-extern "C" {
-void vadd(
-        const v_dt in1, // Read-Only Vector 1
-        const v_dt in2, // Read-Only Vector 2
-        v_dt *out,       // Output Result
-        int size,                // Size in integer
-	const unsigned int num_times, // Running the same kernel operations num_times
-	bool addRandom           // Address Pattern is random
-        )
-{
-
-    v_dt v1_buffer[BUFFER_SIZE];    // Local memory to store vector1
-    v_dt v2_buffer[BUFFER_SIZE];    // Local memory to store vector2
-    v_dt vout_buffer[BUFFER_SIZE];  // Local Memory to store result
-    unsigned int seed = 1;
-    int i, in_index;
-
-
-    minRand(16807, 1);
-  for (int count = 0; count < num_times; count++) {
-#pragma HLS LOOP_TRIPCOUNT min = c_num max = c_num
-
-    //Per iteration of this loop perform BUFFER_SIZE vector addition
-    for(i = 0; i < size;  i += BUFFER_SIZE)
-    {
-#pragma HLS LOOP_TRIPCOUNT min = c_len max = c_len
-	seed = minRand(31, 0);
-        in_index = addRandom ? (seed % size) : i;
-        int chunk_size = BUFFER_SIZE;
-        //boundary checks
-        if ((in_index + BUFFER_SIZE) > size) chunk_size = size - in_index;
-
-        // burst read of v1 and v2 vector from global memory
-        read1: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
-            v1_buffer[j] = in1[in_index + j];
-        }
-        read2: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
-            v2_buffer[j] = in2[in_index + j];
-        }
-
-    // PIPELINE pragma reduces the initiation interval for loop by allowing the
-    // concurrent executions of operations
-        vadd: for (int j = 0 ; j < chunk_size; j ++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
-            //perform vector addition
-            vout_buffer[j] = v1_buffer[j] + v2_buffer[j]; 
-        }
-        //burst write the result
-        write: for (int j = 0 ; j < chunk_size ; j++){
-#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
-#pragma HLS PIPELINE II = 1
-            out[in_index + j] = vout_buffer[j];
-        }
-    }
-  }
-}
-}
 */
 
 extern "C" {
 void vadd(
-    const v_dt *in1,             // Read-Only Vector 1
-    const v_dt *in2,             // Read-Only Vector 2
-    v_dt *out,               // Output Result for ADD
-    const unsigned int size,     // Size in integer
-    const unsigned int num_times, // Running the same kernel operations num_times
-    bool addRandom           // Address Pattern is random
+    const v_dt *in1,               // Read-Only Vector 1
+    const v_dt *in2,               // Read-Only Vector 2
+    v_dt *out,                     // Output Result for ADD
+    const unsigned int size,       // Size in integer
+    const unsigned int num_times,  // Running the same kernel operations num_times
+    bool addRandom                 // Address Pattern is random
     ) {
 #pragma HLS INTERFACE m_axi port = in1 offset = slave bundle = gmem0 latency = 300 num_read_outstanding = 64
 #pragma HLS INTERFACE m_axi port = in2 offset = slave bundle = gmem1 latency = 300 num_read_outstanding = 64
@@ -176,10 +107,16 @@ void vadd(
 // bandwidth testing
 L_vops:
   for (int count = 0; count < num_times; count++) {
+  #pragma HLS LOOP_TRIPCOUNT min = c_total max = c_total
   vops1:
+    //Per iteration of this loop perform vSize vector addition
     for (int i = 0; i < vSize; i++) {
+      #pragma HLS LOOP_TRIPCOUNT min = c_vSize max = c_vSize
       seed = minRand(31, 0);
-      in_index = (seed % vSize);
+      in_index = addRandom ? (seed % size) : i;
+      //in_index = addRandom ? (seed << 10) : i;
+      //if (addRandom) in_index = (seed << 10);
+      //else           in_index = i; 
       tmpIn1 = in1[in_index];
       tmpIn2 = in2[in_index];
 
