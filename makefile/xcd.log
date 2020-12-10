@@ -1,32 +1,27 @@
-Mon Dec  7 12:30:26 2020: Server was asked to start on port: '44119'
-Mon Dec  7 12:30:26 2020: Server is using token UUID: '568346a3-6d4f-4e2d-84b3-c9e8c302e52b'
-Mon Dec  7 12:30:26 2020: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
-Mon Dec  7 12:30:26 2020: Attempting to start server on port '44119'
-Mon Dec  7 12:30:26 2020: XCD main fifo: created main fifo '/tmp/xcdmain568346a3-6d4f-4e2d-84b3-c9e8c302e52b', fd read = 12
-Mon Dec  7 12:30:26 2020: Running Dispatch Server
-Mon Dec  7 12:30:26 2020: Version 2.1.0
-Mon Dec  7 12:30:35 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:30:35 2020: EXCHANGE_TOKEN received, server token: 568346a3-6d4f-4e2d-84b3-c9e8c302e52b, passed token: 568346a3-6d4f-4e2d-84b3-c9e8c302e52b
-Mon Dec  7 12:30:35 2020: SESSION_MGR: creating session with session uuid: 'b2d404bb-9456-41b3-9845-9cfbff7e711b' and name 'v++_link_vadd_hw'
-Mon Dec  7 12:30:35 2020: GUIDANCE_SMGR: creating guidance session with uuid: 'b2d404bb-9456-41b3-9845-9cfbff7e711b' and name 'v++_link_vadd_hw'
-Mon Dec  7 12:31:02 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:31:26 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:35:59 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:35:59 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:35:59 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:36:00 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:36:00 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:36:00 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:36:00 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:36:00 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:40:03 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:41:56 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:44:04 2020: Dispatch Server: Accepted socket connection from client
-Mon Dec  7 12:50:42 2020: Entering handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 12:50:42 2020: Leaving handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 13:18:56 2020: Entering handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 13:18:56 2020: Leaving handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 13:38:25 2020: Entering handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 13:38:25 2020: Leaving handleUtilizationDuringVivadoRunRequest
-Mon Dec  7 13:49:48 2020: SESSION_MGR: closing session for UUID 'b2d404bb-9456-41b3-9845-9cfbff7e711b' with name 'v++_link_vadd_hw'
-Mon Dec  7 13:49:48 2020: GUIDANCE_SMGR: closing session for UUID 'b2d404bb-9456-41b3-9845-9cfbff7e711b' with name 'v++_link_vadd_hw'
+Wed Dec  9 16:32:16 2020: Server was asked to start on port: '37752'
+Wed Dec  9 16:32:16 2020: Server is using token UUID: '12e993e8-8b26-4fbd-a3f4-9b3d45a9c0ac'
+Wed Dec  9 16:32:16 2020: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Wed Dec  9 16:32:16 2020: Attempting to start server on port '37752'
+Wed Dec  9 16:32:16 2020: XCD main fifo: created main fifo '/tmp/xcdmain12e993e8-8b26-4fbd-a3f4-9b3d45a9c0ac', fd read = 12
+Wed Dec  9 16:32:16 2020: Running Dispatch Server
+Wed Dec  9 16:32:16 2020: Version 2.1.0
+Wed Dec  9 16:32:25 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:32:25 2020: EXCHANGE_TOKEN received, server token: 12e993e8-8b26-4fbd-a3f4-9b3d45a9c0ac, passed token: 12e993e8-8b26-4fbd-a3f4-9b3d45a9c0ac
+Wed Dec  9 16:32:25 2020: SESSION_MGR: creating session with session uuid: 'd235f0d1-e7e2-4fc9-8788-51da703726cd' and name 'v++_link_vadd_hw'
+Wed Dec  9 16:32:25 2020: GUIDANCE_SMGR: creating guidance session with uuid: 'd235f0d1-e7e2-4fc9-8788-51da703726cd' and name 'v++_link_vadd_hw'
+Wed Dec  9 16:32:53 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:33:14 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:37:44 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:37:44 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:37:44 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:40:29 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:42:21 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:44:25 2020: Dispatch Server: Accepted socket connection from client
+Wed Dec  9 16:51:19 2020: Entering handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 16:51:19 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 17:20:45 2020: Entering handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 17:20:45 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 17:40:18 2020: Entering handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 17:40:18 2020: Leaving handleUtilizationDuringVivadoRunRequest
+Wed Dec  9 17:52:03 2020: SESSION_MGR: closing session for UUID 'd235f0d1-e7e2-4fc9-8788-51da703726cd' with name 'v++_link_vadd_hw'
+Wed Dec  9 17:52:03 2020: GUIDANCE_SMGR: closing session for UUID 'd235f0d1-e7e2-4fc9-8788-51da703726cd' with name 'v++_link_vadd_hw'
